@@ -1,0 +1,52 @@
+\chapter{Thực nghiệm}
+Với mục tiêu tìm hiểu và giải quyết bài toán phân loại thực khuẩn với dữ liệu đầu vào là contig, nhóm sinh viên thực hiện các thử nghiệm và đánh giá tương tự với nhóm tác giả DeePhage. Chương này trình bày phương pháp xây dựng bộ dữ liệu, các chỉ số đánh giá, kịch bản và kết quả thực nghiệm.
+
+\section{ Xây dựng bộ dữ liệu}
+\subsection{ Xử lý nhãn }
+Sau khi tìm hiểu các bài báo, nhóm sinh viên thực hiện xây dựng bộ dữ liệu mới dựa trên 2 bộ dữ liệu được sử dụng trong bài báo DeepPL và DeePhage. Nhãn $y$ của bản ghi $X$ được nhóm sinh viên xử lý như sau:
+\begin{enumerate}
+    \item Nếu $X \in DeePhage \Rightarrow y = y_{DeePhage}$ 
+    \item Nếu $X \in DeepPL \Rightarrow y = y_{DeepPL}$
+    \item Nếu $X \in DeePhage \cap DeepPL \Rightarrow y = y_{DeePhage}$
+\end{enumerate}
+
+\subsection{ Chia tập dữ liệu}
+Sau khi thực hiện gộp 2 bộ dữ liệu DeePhage và DeepPL, nhóm sinh viên xử lý dữ liệu theo 4 bước sau:
+\begin{enumerate}
+    \item Chia bộ dữ liệu thành 2 tập: huấn luyện và kiểm thử.
+    \item Sử dụng kỹ thuật cửa sổ trượt, tạo các đoạn contig từ bộ gen đầy đủ với 4 nhóm độ dài khác nhau:
+    \begin{itemize}
+        \item A: 100 bp - 400 bp
+        \item B: 400 bp - 800 bp
+        \item C: 800 bp - 1200 bp
+        \item D: 1200 bp - 1800 bp
+    \end{itemize}
+    \item Thực hiện véc-tơ hóa dữ liệu. Tại bước này, nhóm sinh viên sử dụng 2 phương pháp véc-tơ hóa dữ liệu: One-hot và Word2Vec để phù hợp với 2 kịch bản thực nghiệm được trình bày tại phần \ref{ kịch bản thực nghiệm}
+    \begin{itemize}
+        \item Sử dụng One-hot đối với phương pháp DeePhage.
+        \item Sử dụng Word2Vec với k-mer=6.
+    \end{itemize}
+    \item Áp dụng Random Undersampling để cân bằng phân phối nhãn của bộ dữ liệu.
+\end{enumerate}
+\section{Kịch bản thực nghiệm}\label{ kịch bản thực nghiệm}
+Nhận thấy DeePhage là công cụ toàn diện hơn so với nhóm công cụ dựa trên Bert do DeePhage có thể thực hiện phân loại trên nhiều nhóm contig có đội dài linh hoạt, trong khi nhóm công cụ dựa trên Bert chỉ được đánh giá trên bộ dữ liệu có độ dài đầu vào nhỏ hơn bằng 512 bp, nhóm sinh viên quyết định chọn DeePhage là công cụ tiêu chuẩn trong các thực nghiệm.
+
+Nhóm sinh viên thực hiện 2 kịch bản:
+\begin{enumerate}
+    \item Kiểm tra hiệu suất phân loại của DeePhage trên bộ dữ liệu xây dựng.
+    \item Thực hiện so sánh hiệu suất phân loại của DeePhage với 1 công cụ phân loại khác.
+\end{enumerate}
+
+Với kịch bản 1, nhóm sinh viên thực hiện:
+1. Dưa trên code của tác giả, chuyển code về pytorch
+2. Sử dụng One-hot để véc-tơ hóa dữ liệu
+3. Thử nghiệm mô hình với bộ dữ liệu xây dựng.
+
+Với kịch bản 2, nhóm sinh viên thực hiện:
+1. Cài đặt thực nghiệm với XGBoost 
+2. Thử nghiệm mô hình với bộ dữ liệu được véc-tơ hóa thông qua Word2Vec.
+
+\section{Các chỉ số đánh giá}
+Nhóm sinh viên sử dụng các chỉ số 
+
+\section{Kết quả}

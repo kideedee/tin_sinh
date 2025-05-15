@@ -1,0 +1,43 @@
+\begin{thebibliography}{1}
+
+\bibitem{PMID:31061483}
+Ho~Bin~Jang, Benjamin Bolduc, Olivier Zablocki, Jens~H Kuhn, Simon Roux, Evelien~M Adriaenssens, J~Rodney Brister, Andrew~M Kropinski, Mart Krupovic, Rob Lavigne, Dann Turner, and Matthew~B Sullivan.
+\newblock Taxonomic assignment of uncultivated prokaryotic virus genomes is enabled by gene-sharing networks.
+\newblock {\em Nature biotechnology}, 37(6):632—639, June 2019.
+
+\bibitem{BACPHLIP_Hockenberry2020.05.13.094805}
+Adam~J. Hockenberry and Claus~O. Wilke.
+\newblock Bacphlip: Predicting bacteriophage lifestyle from conserved protein domains.
+\newblock {\em bioRxiv}, 2021.
+
+\bibitem{PHACTS_10.1093/bioinformatics/bts014}
+Katelyn McNair, Barbara~A. Bailey, and Robert~A. Edwards.
+\newblock Phacts, a computational approach to classifying the lifestyle of phages.
+\newblock {\em Bioinformatics}, 28(5):614--618, 01 2012.
+
+\bibitem{doi:10.1128/jb.00052-20}
+A.~R. Mushegian.
+\newblock Are there 10<sup>31</sup> virus particles on earth, or more, or fewer?
+\newblock {\em Journal of Bacteriology}, 202(9):10.1128/jb.00052--20, 2020.
+
+\bibitem{PhaTYP_10.1093/bib/bbac487}
+Jiayu Shang, Xubo Tang, and Yanni Sun.
+\newblock Phatyp: predicting the lifestyle for bacteriophages using bert.
+\newblock {\em Briefings in Bioinformatics}, 24(1):bbac487, 11 2022.
+
+\bibitem{PhageAI_Tynecki2020.07.11.198606}
+Piotr Tynecki, Arkadiusz Guzi{\'n}ski, Joanna Kazimierczak, Micha{\l} Jadczuk, Jaros{\l}aw Dastych, and Agnieszka Onisko.
+\newblock Phageai - bacteriophage life cycle recognition with machine learning and natural language processing.
+\newblock {\em bioRxiv}, 2020.
+
+\bibitem{DeePhage_10.1093/gigascience/giab056}
+Shufang Wu, Zhencheng Fang, Jie Tan, Mo~Li, Chunhui Wang, Qian Guo, Congmin Xu, Xiaoqing Jiang, and Huaiqiu Zhu.
+\newblock Deephage: distinguishing virulent and temperate phage-derived sequences in metavirome data with a deep learning approach.
+\newblock {\em GigaScience}, 10(9):giab056, 09 2021.
+
+\bibitem{DeepPL_10.1371/journal.pcbi.1012525}
+Yujie Zhang, Mark Mao, Robert Zhang, Yen-Te Liao, and Vivian C.~H. Wu.
+\newblock Deeppl: A deep-learning-based tool for the prediction of bacteriophage lifecycle.
+\newblock {\em PLOS Computational Biology}, 20(10):1--13, 10 2024.
+
+\end{thebibliography}
