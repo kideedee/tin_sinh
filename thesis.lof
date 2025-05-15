@@ -4,4 +4,6 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Kiến trúc mô hình PhaTYP sử dụng BERT}}{22}{figure.caption.13}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Kiến trúc mô hình DeepPL sử dụng NDABERT}}{26}{figure.caption.23}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces So sánh hiệu suất phân loại của mô hình DeePhage trên 2 bộ dữ liệu xây dựng và công bố.}}{29}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Kết quả hiệu suất phân loại của mô hình XGBoost trên tập dữ liệu xây dựng.}}{30}{figure.caption.27}%
 \addvspace {10\p@ }

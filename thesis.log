@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  16 MAY 2025 04:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  16 MAY 2025 05:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -906,7 +906,7 @@ Package hyperref Info: Link coloring OFF on input line 65.
 
 \c@lstlisting=\count361
 (./cover.tex
-<figures/uet.jpg, id=209, 1125.20375pt x 1125.20375pt>
+<figures/uet.jpg, id=221, 1125.20375pt x 1125.20375pt>
 File: figures/uet.jpg Graphic file (type jpg)
 <use figures/uet.jpg>
 Package pdftex.def Info: figures/uet.jpg  used on input line 22.
@@ -996,7 +996,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.77 \tableofcontents\newpage
-                             \cleardoublepage [5] (./thesis.lof)
+                             \cleardoublepage [5]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.77 \tableofcontents\newpage
+                             \cleardoublepage [6] (./thesis.lof)
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
@@ -1007,7 +1014,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.82 \listoffigures\cleardoublepage
-                                    [6
+                                    [7
 
 
 ]
@@ -1026,7 +1033,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.88 \newpage
-              [7
+              [8
 
 
 ] (./chapters/glossary.tex
@@ -1046,7 +1053,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.89 \input{chapters/glossary}\newpage
-                                      \cleardoublepage [8
+                                      \cleardoublepage [9
 
 ] (./chapters/c0_introduction.tex
 Ch\uhorn \ohorn ng 1.
@@ -1193,7 +1200,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 ]
-<figures/DeePhage_Model.jpg, id=438, 626.34pt x 275.0275pt>
+<figures/DeePhage_Model.jpg, id=462, 626.34pt x 275.0275pt>
 File: figures/DeePhage_Model.jpg Graphic file (type jpg)
 <use figures/DeePhage_Model.jpg>
 Package pdftex.def Info: figures/DeePhage_Model.jpg  used on input line 40.
@@ -1212,7 +1219,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 [21]
-<figures/PhaTYP_Model.png, id=454, 729.72626pt x 391.4625pt>
+<figures/PhaTYP_Model.png, id=478, 729.72626pt x 391.4625pt>
 File: figures/PhaTYP_Model.png Graphic file (type png)
 <use figures/PhaTYP_Model.png>
 Package pdftex.def Info: figures/PhaTYP_Model.png  used on input line 73.
@@ -1233,7 +1240,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 [24]
-<figures/DeepPL_model.png, id=477, 863.225pt x 576.1525pt>
+<figures/DeepPL_model.png, id=501, 863.225pt x 576.1525pt>
 File: figures/DeepPL_model.png Graphic file (type png)
 <use figures/DeepPL_model.png>
 Package pdftex.def Info: figures/DeepPL_model.png  used on input line 163.
@@ -1250,29 +1257,44 @@ Ch\uhorn \ohorn ng 3.
 
 
 
-])
+]
 
-[28] (./chapters/c3_evaluation.tex
+[28]
+<figures/result_deephage_exp_vs_paper.png, id=533, 504.9264pt x 316.0608pt>
+File: figures/result_deephage_exp_vs_paper.png Graphic file (type png)
+<use figures/result_deephage_exp_vs_paper.png>
+Package pdftex.def Info: figures/result_deephage_exp_vs_paper.png  used on input line 65.
+(pdftex.def)             Requested size: 455.24411pt x 284.96811pt.
+<figures/result_xgboost.png, id=535, 644.6484pt x 344.0052pt>
+File: figures/result_xgboost.png Graphic file (type png)
+<use figures/result_xgboost.png>
+Package pdftex.def Info: figures/result_xgboost.png  used on input line 76.
+(pdftex.def)             Requested size: 455.24411pt x 242.93837pt.
+
+
+[29 <./figures/result_deephage_exp_vs_paper.png>])
+
+[30 <./figures/result_xgboost.png>] (./chapters/c3_evaluation.tex
 Ch\uhorn \ohorn ng 4.
 
 
-[29
+[31
 
 
 
 ]
 
-[30])
+[32])
 
-[31] (./chapters/c4_conclusion.tex)
+[33] (./chapters/c4_conclusion.tex)
 
-[32
+[34
 
 
 
 ] (./thesis.bbl)
 
-[33
+[35
 
 
 
@@ -1287,21 +1309,21 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 1079E8A7CD5C7A7478401C5057C88645;12515.
+(rerunfilecheck)             Checksum: 1F894AC684F88952EDBBBB7F3859A2BE;13706.
  ) 
 Here is how much of TeX's memory you used:
- 26699 strings out of 469608
- 478583 string characters out of 5474779
- 871108 words of memory out of 5000000
- 52906 multiletter control sequences out of 15000+600000
+ 26725 strings out of 469608
+ 479319 string characters out of 5474779
+ 871387 words of memory out of 5000000
+ 52925 multiletter control sequences out of 15000+600000
  648566 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,9n,107p,1176b,601s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,9n,107p,1176b,600s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnti12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vntt12.pfb>
-Output written on thesis.pdf (41 pages, 2682012 bytes).
+Output written on thesis.pdf (44 pages, 2850454 bytes).
 PDF statistics:
- 609 PDF objects out of 1000 (max. 8388607)
- 534 compressed objects within 6 object streams
- 141 named destinations out of 1000 (max. 500000)
- 441 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 649 PDF objects out of 1000 (max. 8388607)
+ 567 compressed objects within 6 object streams
+ 148 named destinations out of 1000 (max. 500000)
+ 475 words of extra memory for PDF output out of 10000 (max. 10000000)
 
