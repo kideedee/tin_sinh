@@ -42,11 +42,10 @@
 \contentsline {subsection}{\numberline {3.1.1} Xử lý nhãn }{27}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2} Chia tập dữ liệu}{27}{subsection.3.1.2}%
 \contentsline {section}{\numberline {3.2}Kịch bản thực nghiệm}{28}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Các chỉ số đánh giá}{28}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Các chỉ số đánh giá}{29}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Kết quả}{29}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Hiệu suất phân loại của DeePhage trên bộ dữ liệu xây dựng}{29}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Hiệu xuất phân loại của XGBoost trên bộ dữ liệu xây dựng}{30}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}So sánh hiệu suất phân loại giữa DeePhage và XGBoost}{30}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.2}So sánh hiệu suất phân loại giữa DeePhage và XGBoost trên bộ dữ liệu xây dựng}{30}{subsection.3.4.2}%
 \contentsline {chapter}{\numberline {4}Đánh giá các phương pháp}{31}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Thảo luận mở rộng}{31}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Vấn đề về tính giải thích của mô hình}{31}{subsection.4.1.1}%
