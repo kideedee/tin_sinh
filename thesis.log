@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  16 MAY 2025 23:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  17 MAY 2025 01:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -906,7 +906,7 @@ Package hyperref Info: Link coloring OFF on input line 65.
 
 \c@lstlisting=\count361
 (./cover.tex
-<figures/uet.jpg, id=217, 1125.20375pt x 1125.20375pt>
+<figures/uet.jpg, id=200, 1125.20375pt x 1125.20375pt>
 File: figures/uet.jpg Graphic file (type jpg)
 <use figures/uet.jpg>
 Package pdftex.def Info: figures/uet.jpg  used on input line 22.
@@ -931,17 +931,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.66 \input{cover}\newpage
-                          \cleardoublepage [2] (./chapters/abtract_vi.tex)
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.73 \input{chapters/abtract_vi}\newpage
-                                        \cleardoublepage [3
-
-
-] (./thesis.toc
+                          \cleardoublepage [2] (./thesis.toc
 LaTeX Font Info:    Calculating math sizes for size <13> on input line 1.
 
 
@@ -981,8 +971,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 ....4.2}Phương pháp}{10}{subsection.2.4.2}
-                                                  % [4
+l.28 ...Nguồn dữ liệu}{12}{subsection.2.5.1}
+                                                  % [3
 
 
 ])
@@ -996,14 +986,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.77 \tableofcontents\newpage
-                             \cleardoublepage [5]
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.77 \tableofcontents\newpage
-                             \cleardoublepage [6] (./thesis.lof)
+                             \cleardoublepage [4] (./thesis.lof)
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
@@ -1014,7 +997,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.82 \listoffigures\cleardoublepage
-                                    [7
+                                    [5
 
 
 ]
@@ -1033,7 +1016,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.88 \newpage
-              [8
+              [6
 
 
 ] (./chapters/glossary.tex
@@ -1053,7 +1036,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.89 \input{chapters/glossary}\newpage
-                                      \cleardoublepage [9
+                                      \cleardoublepage [7
+
+] (./chapters/abtract_vi.tex)
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.91 \input{chapters/abtract_vi}\newpage
+                                        \cleardoublepage [8
+
 
 ] (./chapters/c0_introduction.tex
 Ch\uhorn \ohorn ng 1.
@@ -1068,64 +1061,68 @@ LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <13> not available
 
 
 {c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+<figures/problem.png, id=310, 621.07031pt x 140.77594pt>
+File: figures/problem.png Graphic file (type png)
+<use figures/problem.png>
+Package pdftex.def Info: figures/problem.png  used on input line 28.
+(pdftex.def)             Requested size: 455.24411pt x 103.18874pt.
 
-[2]
-LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 56.
+
+[2 <./figures/problem.png>]
+
+[3]
+LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 67.
  (c:/texlive/2025/texmf-dist/tex/latex/vntex/t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
+LaTeX Font Info:    Font shape `T5/cmtt/bx/n' in size <13> not available
+(Font)              Font shape `T5/cmtt/m/n' tried instead on input line 67.
 
-[3]
 
 [4]
-LaTeX Font Info:    Font shape `T5/cmtt/bx/n' in size <13> not available
-(Font)              Font shape `T5/cmtt/m/n' tried instead on input line 91.
-
 
 [5]
-Overfull \hbox (6.22392pt too wide) in paragraph at lines 150--150
+Overfull \hbox (6.22392pt too wide) in paragraph at lines 126--126
 []\T5/cmtt/m/n/13 LOCUS       AF503408    101660 bp    DNA     linear   PHG 28-APR-2006[] 
  []
 
 
-
-[6]
-Overfull \hbox (6.22392pt too wide) in paragraph at lines 150--150
+Overfull \hbox (6.22392pt too wide) in paragraph at lines 126--126
 []  \T5/cmtt/m/n/13 1 acattatacg aagttatatt aagggttatt gaacatgatc aatttacctg taaatccata[] 
  []
 
 
-Overfull \hbox (6.22392pt too wide) in paragraph at lines 150--150
+Overfull \hbox (6.22392pt too wide) in paragraph at lines 126--126
 [] \T5/cmtt/m/n/13 61 cagttcaata ccttatcagg tcaaatagtg atcacttgat catttgatca agtttgcgct[] 
  []
 
 
-Overfull \hbox (6.22392pt too wide) in paragraph at lines 150--150
+Overfull \hbox (6.22392pt too wide) in paragraph at lines 126--126
 []\T5/cmtt/m/n/13 121 acgtaaaatc tgtgaaaagt tggcagtgtt agtgctccag atttcgcgta gcgcacttag[] 
  []
 
 
-Overfull \hbox (6.22392pt too wide) in paragraph at lines 150--150
+Overfull \hbox (6.22392pt too wide) in paragraph at lines 126--126
 []\T5/cmtt/m/n/13 181 caccaccaat caatcagagg tgaaaaatgg gatattcagc tgctaaagtg tccactcatc[] 
  []
 
 
-Overfull \hbox (6.22392pt too wide) in paragraph at lines 150--150
+Overfull \hbox (6.22392pt too wide) in paragraph at lines 126--126
 []\T5/cmtt/m/n/13 241 ttgagcttga gaaaaaccgt ggttactggc gggcaaaagg gtttgatcgt gatagttgcc[] 
  []
 
 
-Overfull \hbox (6.22392pt too wide) in paragraph at lines 150--150
+Overfull \hbox (6.22392pt too wide) in paragraph at lines 126--126
 []\T5/cmtt/m/n/13 301 aactgtcatt atcgcgcggt gaagagaaaa tagtacgcac gcgcggtcgc tggcgtttct[] 
  []
 
 
 
-[7]) (./chapters/c1_methods.tex
+[6]) (./chapters/c1_methods.tex
 Ch\uhorn \ohorn ng 2.
 
 
-[8
+[7
 
 
 
@@ -1133,32 +1130,16 @@ Ch\uhorn \ohorn ng 2.
 
 ])
 
-[9] (./chapters/c1.1_machinelearing_methods.tex
+[8] (./chapters/c1.1_machinelearing_methods.tex
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1.
-
-
-
-[10
+[9
 
 
 ]
 
+[10]
+
 [11]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 81.
-
-
 
 [12]
 
@@ -1166,136 +1147,83 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [14]
 
-[15]
+[15]) (./chapters/c1.2_deeplearning_methods.tex
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 152.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 152.
-
-
-
-[16])
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
+[16]
 
 [17]
-
-[18] (./chapters/c1.2_deeplearning_methods.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1.
-
-
-
-[19
-
-
-]
-<figures/DeePhage_Model.jpg, id=458, 626.34pt x 275.0275pt>
+<figures/DeePhage_Model.jpg, id=429, 626.34pt x 275.0275pt>
 File: figures/DeePhage_Model.jpg Graphic file (type jpg)
 <use figures/DeePhage_Model.jpg>
 Package pdftex.def Info: figures/DeePhage_Model.jpg  used on input line 40.
 (pdftex.def)             Requested size: 455.24411pt x 199.9039pt.
 
 
-[20 <./figures/DeePhage_Model.jpg>]
+[18 <./figures/DeePhage_Model.jpg>]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 60.
-
-
-
-[21]
-<figures/PhaTYP_Model.png, id=474, 729.72626pt x 391.4625pt>
+[19]
+<figures/PhaTYP_Model.png, id=447, 729.72626pt x 391.4625pt>
 File: figures/PhaTYP_Model.png Graphic file (type png)
 <use figures/PhaTYP_Model.png>
 Package pdftex.def Info: figures/PhaTYP_Model.png  used on input line 73.
 (pdftex.def)             Requested size: 455.24411pt x 244.21545pt.
 
 
-[22 <./figures/PhaTYP_Model.png>]
+[20 <./figures/PhaTYP_Model.png>]
 
-[23]
+[21]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 121.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 121.
-
-
-
-[24]
-<figures/DeepPL_model.png, id=497, 863.225pt x 576.1525pt>
+[22]
+<figures/DeepPL_model.png, id=469, 863.225pt x 576.1525pt>
 File: figures/DeepPL_model.png Graphic file (type png)
 <use figures/DeepPL_model.png>
 Package pdftex.def Info: figures/DeepPL_model.png  used on input line 163.
 (pdftex.def)             Requested size: 455.24411pt x 303.84724pt.
 
 
-[25])
+[23])
 
-[26 <./figures/DeepPL_model.png>] (./chapters/c2_experiments.tex
+[24 <./figures/DeepPL_model.png>] (./chapters/c2_experiments.tex
 Ch\uhorn \ohorn ng 3.
 
 
-[27
+[25
 
 
 
 ]
 
-[28]
-<figures/result_verify_deephage.png, id=527, 578.6418pt x 362.3136pt>
+[26]
+<figures/result_verify_deephage.png, id=499, 578.6418pt x 362.3136pt>
 File: figures/result_verify_deephage.png Graphic file (type png)
 <use figures/result_verify_deephage.png>
 Package pdftex.def Info: figures/result_verify_deephage.png  used on input line 51.
 (pdftex.def)             Requested size: 455.24411pt x 285.05257pt.
 
 
-[29 <./figures/result_verify_deephage.png>]
-<figures/result_deephage_vs_xgboost.png, id=534, 579.1236pt x 362.3136pt>
+[27 <./figures/result_verify_deephage.png>]
+<figures/result_deephage_vs_xgboost.png, id=506, 579.1236pt x 362.3136pt>
 File: figures/result_deephage_vs_xgboost.png Graphic file (type png)
 <use figures/result_deephage_vs_xgboost.png>
 Package pdftex.def Info: figures/result_deephage_vs_xgboost.png  used on input line 62.
 (pdftex.def)             Requested size: 455.24411pt x 284.82037pt.
 )
 
-[30 <./figures/result_deephage_vs_xgboost.png>] (./chapters/c3_evaluation.tex
+[28 <./figures/result_deephage_vs_xgboost.png>] (./chapters/c3_evaluation.tex
 Ch\uhorn \ohorn ng 4.
 
 
-[31
+[29
 
 
 
 ]
 
-[32])
+[30])
 
-[33] (./chapters/c4_conclusion.tex)
+[31] (./thesis.bbl)
 
-[34
-
-
-
-] (./thesis.bbl)
-
-[35
+[32
 
 
 
@@ -1310,21 +1238,21 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9601F4C6B4A03404DC22B704AF80D073;13459.
+(rerunfilecheck)             Checksum: B6A346CD987314B81F6FB059C6F65C0D;9120.
  ) 
 Here is how much of TeX's memory you used:
- 26721 strings out of 469608
- 479313 string characters out of 5474779
- 871388 words of memory out of 5000000
- 52924 multiletter control sequences out of 15000+600000
- 648566 words of font info for 77 fonts, out of 8000000 for 9000
+ 26719 strings out of 469608
+ 478997 string characters out of 5474779
+ 871398 words of memory out of 5000000
+ 52923 multiletter control sequences out of 15000+600000
+ 649547 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,9n,107p,1198b,600s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,8n,107p,1293b,600s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnti12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vntt12.pfb>
-Output written on thesis.pdf (44 pages, 2729282 bytes).
+Output written on thesis.pdf (40 pages, 2746866 bytes).
 PDF statistics:
- 644 PDF objects out of 1000 (max. 8388607)
- 562 compressed objects within 6 object streams
- 145 named destinations out of 1000 (max. 500000)
- 467 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 612 PDF objects out of 1000 (max. 8388607)
+ 532 compressed objects within 6 object streams
+ 147 named destinations out of 1000 (max. 500000)
+ 440 words of extra memory for PDF output out of 10000 (max. 10000000)
 

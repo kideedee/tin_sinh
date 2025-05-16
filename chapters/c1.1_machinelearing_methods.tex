@@ -1,6 +1,6 @@
-\section{PHACTS - Phage Classification Tool Set \cite{PHACTS_10.1093/bioinformatics/bts014}}
+\section{PHACTS}
 
-PHACTS là một trong những công cụ tiên phong trong việc phân loại thực khuẩn thể theo vòng đời dựa trên bộ gen đầy đủ. Công cụ này sử dụng thuật toán \textbf{Random Forest (Rừng ngẫu nhiên)} để xây dựng mô hình học máy dựa trên mức độ tương đồng protein giữa các thực khuẩn.
+PHACTS\cite{mcnair2012phacts} là một trong những công cụ tiên phong trong việc phân loại thực khuẩn thể theo vòng đời dựa trên bộ gen đầy đủ. Công cụ này sử dụng thuật toán \textbf{Random Forest (Rừng ngẫu nhiên)} để xây dựng mô hình học máy dựa trên mức độ tương đồng protein giữa các thực khuẩn.
 
 \subsection{Dữ liệu huấn luyện}
 
@@ -78,9 +78,9 @@ PHACTS hoạt động qua ba bước chính để dự đoán lối sống của
 
 PHACTS có thể đưa ra dự đoán với độ chính xác chấp nhận được ngay cả khi chỉ có một phần bộ gen của thực khuẩn. Việc sử dụng mô hình Rừng ngẫu nhiên (Random Forest) giúp cho PHACTS dễ hiểu và có thể được giải thích. Tuy nhiên, PHACTS sử dụng tập dữ liệu chỉ với 227 mẫu gen đầy đủ đã được gán nhãn là một hạn chế lớn. 
 
-\section{PhageAI - Bacteriophage Life Cycle Recognition with Machine Learning and Natural Language Processing \cite{PhageAI_Tynecki2020.07.11.198606}}
+\section{PhageAI}
 
-PhageAI sử dụng phương pháp tiếp cận dựa trên Học máy và Xử lý ngôn ngữ tự nhiên để phân loại thực khuẩn dựa trên trình tự nucleotide mà không cần dựa vào chức năng giả định của gen.
+PhageAI\cite{tynecki2020phageai} sử dụng phương pháp tiếp cận dựa trên Học máy và Xử lý ngôn ngữ tự nhiên để phân loại thực khuẩn dựa trên trình tự nucleotide mà không cần dựa vào chức năng giả định của gen.
 
 \subsection{Nguồn dữ liệu}
 
@@ -149,9 +149,9 @@ Kết quả tốt nhất đạt được với bộ phân loại Support Vector 
 
 Để xác nhận khả năng tổng quát hóa dữ liệu mới của mô hình, nhóm nghiên cứu cũng thử nghiệm nó trên một tập dữ liệu không có sẵn công khai do công ty Proteon Pharmaceuticals S.A. cung cấp. Tất cả 61 thực khuẩn (49 độc lực, 12 ôn hòa) đều đạt được dự đoán chính xác bởi mô hình, phù hợp với kết quả dự đoán chu kỳ sống được thực hiện thủ công.
 
-\section{BACPHLIP - Bacteriophage Lifestyle Predictor \cite{BACPHLIP_Hockenberry2020.05.13.094805}}
+\section{BACPHLIP}
 
-BACPHLIP là công cụ phân loại thực khuẩn được phát triển vào năm 2021, sử dụng mô hình học máy \textbf{Rừng ngẫu nhiên (Random Forest)} và tập trung vào việc khai thác các \textbf{protein domain bảo tồn} trong bộ gen thực khuẩn. 
+BACPHLIP \cite{hockenberry2021bacphlip} là công cụ phân loại thực khuẩn được phát triển vào năm 2021, sử dụng mô hình học máy \textbf{Rừng ngẫu nhiên (Random Forest)} và tập trung vào việc khai thác các \textbf{protein domain bảo tồn} trong bộ gen thực khuẩn. 
 
 Protein domain bảo tồn trong bộ gen thực khuẩn là các vùng chức năng trong chuỗi axit amin của protein, được duy trì qua quá trình tiến hóa và thường xuất hiện ở nhiều loài thực khuẩn khác nhau. Những domain này thường liên quan đến các chức năng thiết yếu như lắp ráp cấu trúc virus, xâm nhập tế bào chủ, sao chép DNA và ly giải tế bào vi khuẩn
 
@@ -177,9 +177,7 @@ BACPHLIP xây dựng mô hình theo các bước chính sau:
 \end{enumerate}
 
 \subsection*{Kết quả thực nghiệm}
-Mô hình \textbf{BACPHLIP} cho thấy hiệu năng vượt trội so với \textbf{PHACTS}, cả về độ chính xác và các chỉ số đánh giá khác. Một trong những nguyên nhân chính là BACPHLIP được huấn luyện trên tập dữ liệu lớn hơn đáng kể, với tổng cộng \textbf{1057} bộ gen thực khuẩn thể có nhãn rõ ràng về vòng đời, so với chỉ \textbf{277} mẫu được sử dụng trong PHACTS. Việc mở rộng quy mô dữ liệu huấn luyện giúp mô hình học được đặc trưng đa dạng và tổng quát hơn của các loại thực khuẩn thể.
 
-Kết quả đánh giá trên tập kiểm thử cho thấy BACPHLIP đạt độ chính xác lên tới \textbf{98.3\%}, cao hơn nhiều so với \textbf{79.0\%} của PHACTS. Các chỉ số khác cũng phản ánh sự vượt trội của BACPHLIP: \textit{balanced accuracy} đạt \textbf{97.0\%} so với \textbf{52.8\%}, hệ số tương quan Matthews (\textit{MCC}) là \textbf{96.7\%} so với \textbf{58.6\%}, và \textit{F1-score} đạt \textbf{98.5\%} trong khi PHACTS chỉ đạt \textbf{83.7\%}. 
 \begin{table}[h]
 \centering
 \caption{So sánh kết quả của BACPHLIP với các Mavrich và PHACTS.}
@@ -195,3 +193,7 @@ F1-score          & \textbf{0.985} & 0.939 & 0.837 \\
 \hline
 \end{tabular}
 \end{table}
+
+Mô hình \textbf{BACPHLIP} cho thấy hiệu năng vượt trội so với \textbf{PHACTS}, cả về độ chính xác và các chỉ số đánh giá khác. Một trong những nguyên nhân chính là BACPHLIP được huấn luyện trên tập dữ liệu lớn hơn đáng kể, với tổng cộng \textbf{1057} bộ gen thực khuẩn thể có nhãn rõ ràng về vòng đời, so với chỉ \textbf{277} mẫu được sử dụng trong PHACTS. Việc mở rộng quy mô dữ liệu huấn luyện giúp mô hình học được đặc trưng đa dạng và tổng quát hơn của các loại thực khuẩn thể.
+
+Kết quả đánh giá trên tập kiểm thử cho thấy BACPHLIP đạt độ chính xác lên tới \textbf{98.3\%}, cao hơn nhiều so với \textbf{79.0\%} của PHACTS. Các chỉ số khác cũng phản ánh sự vượt trội của BACPHLIP: \textit{balanced accuracy} đạt \textbf{97.0\%} so với \textbf{52.8\%}, hệ số tương quan Matthews (\textit{MCC}) là \textbf{96.7\%} so với \textbf{58.6\%}, và \textit{F1-score} đạt \textbf{98.5\%} trong khi PHACTS chỉ đạt \textbf{83.7\%}. 
