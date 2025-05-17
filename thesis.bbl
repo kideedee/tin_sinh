@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{PMID:31061483}
 Ho~Bin~Jang, Benjamin Bolduc, Olivier Zablocki, Jens~H Kuhn, Simon Roux, Evelien~M Adriaenssens, J~Rodney Brister, Andrew~M Kropinski, Mart Krupovic, Rob Lavigne, Dann Turner, and Matthew~B Sullivan.
@@ -9,6 +9,11 @@ Ho~Bin~Jang, Benjamin Bolduc, Olivier Zablocki, Jens~H Kuhn, Simon Roux, Evelien
 Adam~J Hockenberry and Claus~O Wilke.
 \newblock Bacphlip: predicting bacteriophage lifestyle from conserved protein domains.
 \newblock {\em PeerJ}, 9:e11396, 2021.
+
+\bibitem{ji2021dnabert}
+Yanrong Ji, Zhihan Zhou, Han Liu, and Ramana~V Davuluri.
+\newblock Dnabert: pre-trained bidirectional encoder representations from transformers model for dna-language in genome.
+\newblock {\em Bioinformatics}, 37(15):2112--2120, 2021.
 
 \bibitem{mcnair2012phacts}
 Katelyn McNair, Barbara~A Bailey, and Robert~A Edwards.
@@ -39,5 +44,15 @@ Shufang Wu, Zhencheng Fang, Jie Tan, Mo~Li, Chunhui Wang, Qian Guo, Congmin Xu, 
 Yujie Zhang, Mark Mao, Robert Zhang, Yen-Te Liao, and Vivian~CH Wu.
 \newblock Deeppl: A deep-learning-based tool for the prediction of bacteriophage lifecycle.
 \newblock {\em PLOS Computational Biology}, 20(10):e1012525, 2024.
+
+\bibitem{zhou2023dnabert}
+Zhihan Zhou, Yanrong Ji, Weijian Li, Pratik Dutta, Ramana Davuluri, and Han Liu.
+\newblock Dnabert-2: Efficient foundation model and benchmark for multi-species genome.
+\newblock {\em arXiv preprint arXiv:2306.15006}, 2023.
+
+\bibitem{zhou2024dnabert}
+Zhihan Zhou, Weimin Wu, Harrison Ho, Jiayi Wang, Lizhen Shi, Ramana~V Davuluri, Zhong Wang, and Han Liu.
+\newblock Dnabert-s: Learning species-aware dna embedding with genome foundation models.
+\newblock {\em arXiv preprint arXiv:2402.08777}, 2, 2024.
 
 \end{thebibliography}

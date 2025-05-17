@@ -1,60 +1,14 @@
 
 \chapter{Kết luận}
-\section{Thảo luận mở rộng}
+Trong chương này, nhóm sinh viên tóm tắt lại các kết quả đã đạt được, thảo luận thêm về các phương pháp đã được trình bày trong Chương \ref{chap2} và các đề xuất cho hướng nghiên cứu tiếp theo.
 
-\subsection{Vấn đề về tính giải thích của mô hình}
+\section{Các phương pháp phân loại thực khuẩn}
+Trong báo cáo này, nhóm sinh viên đã trình bày một cách tổng quan về các phương pháp phân loại thực khuẩn dựa trên tính toán. Các phương pháp này bao gồm: PHACTS, PhageAI, BACPHLIP, DeePhage, PhaTYP, DeepPL và được phân chia thành 2 nhóm. Tuy cùng giải quyết một bài toán là phân loại thực khuẩn, hai nhóm lại có cách tiếp cận khác nhau. Nhóm 1 gồm có PHACTS, PhageAI, BACPHLIP là các phương pháp sử dụng các thuật toán học máy truyền thống với đầu vào là bộ dữ liệu di truyền đầy đủ của thực khuẩn. Ta có thể dễ dàng nhận thấy, bài toán mà nhóm phương pháp 1 giải quyết có điều kiện lý tưởng khi mà dữ liệu đầu vào của các thuật toán là bộ dữ liệu di truyền đầy đủ của thực khuẩn, điều khó có thể thu thập được trong thực tế. Sau khi đã đạt các kết quả gần như tuyệt đối với bài toán này, các nhà khoa học dần chuyển sang giải quyết bài toán với điều kiện sát với thực tế hơn, khi mà dữ liệu đầu vào là các đoạn di truyền không đầy đủ, điều thường xuất hiện khi dữ liệu được thu thập. Các phương pháp nhóm 2 gồm có: DeePhage, PhaTYP, DeepPL dần được phát triển để thực hiện phân loại đoạn dữ liệu di truyền không đầy đủ của thực khuẩn.
 
-Một trong những thách thức lớn nhất hiện nay trong việc áp dụng các mô hình học sâu vào phân loại thực khuẩn thể là tính khó giải thích (\textit{interpretability}). Các mô hình như \textbf{DeepPL} hay \textbf{PhaTYP} hoạt động như “hộp đen”, khiến cho việc truy vết nguyên nhân sinh học đằng sau dự đoán trở nên khó khăn.
+Trong các phương pháp của nhóm 2, DeePhage có thể coi là dễ tiếp cận nhất hiện tại khi mang trong mình các ưu điểm: hiệu suất phân loại tốt, thời gian huấn luyện nhanh, mô hình đơn giản. Khi được so sánh với PhaTYP hay DeepPL, hiệu suất phân loại của 2 phương pháp này cao hơn DeePhage khoảng 5\% đến 10\% nhưng cần rất nhiều tài nguyên để có thể thực hiện huấn luyện 2 mô hình này. Với cấu hình phần cứng của nhóm sinh viên, thời gian huấn luyện một vòng của DeePhage chỉ khoảng 3s đến 5s nhưng con số này với các phương pháp dựa trên Bert là 7 giờ tới 10 giờ. Như vậy với điều kiện tài nguyên tính toán không nhiều, DeePhage đang là lựa chọn tối ưu nhất.
 
-\begin{itemize}
-    \item Với các mô hình truyền thống như \textbf{PHACTS} hay \textbf{BACPHLIP}, các đặc trưng (như protein domain, mức độ tương đồng protein) dễ dàng liên hệ với kiến thức sinh học.
-    \item Trong khi đó, các mô hình học sâu chỉ cung cấp đầu ra phân loại mà không lý giải cụ thể đặc trưng nào ảnh hưởng tới kết quả.
-\end{itemize}
+\section{Các kết quả thực nghiệm đạt được}
+Trong báo cáo, có 2 kịch bản đã được thực hiện: 1 - cài đặt lại DeePhage và so sánh với kết quả được công bố, 2 - tạo một bộ dữ liệu mới, thực hiện so sánh DeePhage và XGBoost. Với thực nghiệm 1, kết quả cho thấy hiệu suất phân loại của mô hình DeePhage được cài đặt lại so với kết quả được công bố ở mức hợp lý, không chênh lệch quá 5\%. Điều này cho thấy mã nguồn cài đặt lại mô hình DeePhage là đáng tin cậy. Với thực nghiệm 2, nhóm sinh viên đã thực hiện tạo một bộ dữ liệu mới dựa trên hai bộ dữ liệu của hai bài báo: DeePhage\cite{wu2021deephage} và DeepPL\cite{zhang2024deeppl}. Kết quả của mô hình DeePhage trên tập này tốt hơn XGBoost ở 2 chỉ số Sensitivity và Accuracy với chênh lệch khoảng từ 2\% đến 5\%. Điều này cho thấy DeePhage nhận diện nhãn 1 - thực khuẩn thể độc lực tốt hơn XGBoost và dự đoán chính xác hơn khi có Accuracy cao hơn. XGBoost tốt hơn DeePhage ở chỉ số Specificity cho thấy mô hình này nhận diện nhãn 0 - thực khuẩn thể ôn hòa tốt hơn DeePhage.
 
-Điều này gây khó khăn khi kết hợp kết quả mô hình với thực nghiệm sinh học hoặc khi cần kiểm chứng trong môi trường lâm sàng. Vì vậy, hướng nghiên cứu cần tập trung phát triển các mô hình \textbf{có khả năng giải thích} (\textit{explainable AI – XAI}) hoặc kết hợp giữa các lớp học máy và sinh học chức năng.
-
-\subsection{Khả năng mở rộng và cập nhật mô hình}
-
-Hầu hết các mô hình hiện nay đều cần \textbf{tái huấn luyện khi có dữ liệu mới}, đặc biệt là các mô hình học sâu như PhageAI hay DeepPL. Điều này gây khó khăn trong thực tiễn vì:
-
-\begin{itemize}
-    \item Dữ liệu thực khuẩn thể liên tục được cập nhật.
-    \item Tập huấn luyện cần duy trì độ cân bằng giữa hai vòng đời.
-    \item Yêu cầu phần cứng lớn khi huấn luyện lại mô hình với toàn bộ dữ liệu.
-\end{itemize}
-
-Do đó, hướng tiếp cận \textbf{học liên tục} (\textit{continual learning}) hoặc \textbf{học bán giám sát} (\textit{semi-supervised learning}) có thể là giải pháp tiềm năng, cho phép mô hình thích ứng dần với dữ liệu mới mà không cần tái huấn luyện hoàn toàn.
-
-\subsection{Ứng dụng trong môi trường metagenomics}
-
-Dữ liệu metagenomics là môi trường đặc biệt, chứa nhiều contig ngắn chưa rõ nguồn gốc. Các phương pháp như \textbf{DeePhage} và \textbf{PhaTYP} cho thấy khả năng vượt trội trong việc xử lý loại dữ liệu này, tuy nhiên vẫn tồn tại các giới hạn:
-
-\begin{itemize}
-    \item Các contig quá ngắn (<100 bp) hoặc chứa nhiều tạp nhiễu vẫn gây khó khăn cho mô hình.
-    \item Thiếu annotation khiến việc xác nhận vòng đời phage ngoài thực nghiệm là bất khả thi.
-\end{itemize}
-
-Giải pháp có thể là kết hợp phân loại phage với các phương pháp xác định vị trí chèn gen, tìm gene dấu hiệu lysogeny, hoặc kết hợp thêm thông tin từ vật chủ vi khuẩn để tăng độ tin cậy.
-
-\subsection{Kết hợp nhiều phương pháp (ensemble)}
-
-Một hướng đi nhiều tiềm năng là xây dựng hệ thống phân loại phage đa tầng (multi-stage pipeline), kết hợp nhiều mô hình:
-
-\begin{itemize}
-    \item Giai đoạn đầu: Lọc nhanh các contig nghi ngờ bằng DeePhage hoặc mô hình CNN đơn giản.
-    \item Giai đoạn hai: Áp dụng DeepPL hoặc DNABERT để phân tích chuyên sâu.
-    \item Giai đoạn ba: Ánh xạ kết quả với dữ liệu protein, domain để tăng tính giải thích.
-\end{itemize}
-
-Cách tiếp cận này giúp tận dụng sức mạnh của từng mô hình, đồng thời cân bằng giữa tốc độ, độ chính xác và khả năng giải thích kết quả.
-
-\subsection{Hướng nghiên cứu tương lai}
-
-Dựa trên những quan sát và đánh giá ở trên, các hướng nghiên cứu tiềm năng bao gồm:
-
-\begin{itemize}
-    \item Phát triển các mô hình học sâu có khả năng giải thích (\textit{interpretable deep learning}).
-    \item Ứng dụng kỹ thuật học liên tục hoặc học bán giám sát để cập nhật mô hình với chi phí thấp.
-    \item Kết hợp thêm thông tin từ hệ gen vật chủ hoặc môi trường sinh học xung quanh.
-    \item Chuẩn hóa tập dữ liệu benchmark để dễ dàng đánh giá mô hình một cách khách quan.
-\end{itemize}
+\section{Hướng nghiên cứu tiếp theo}
+Trong tương lai, nhóm sinh viên dự định sẽ tiếp tục tìm hiểu, áp dụng và cải tiến các phương pháp phân loại thực khuẩn dựa trên tính toán khác. Hiện tại, các phương pháp được áp dụng chủ yếu là tinh chỉnh một mô hình đã được huấn luyện trước sau đó dùng chúng để thực hiện phân loại. Nhóm tác giả của mô hình DNABERT\cite{ji2021dnabert} đã công bố 2 phiên bản nâng cấp là DNABERT-2\cite{zhou2023dnabert} và DNABERT-S\cite{zhou2024dnabert}. Nhóm sinh viên sẽ tiếp tục tìm hiểu và tìm cách áp dụng để cải thiện hiệu suất phân loại trên bộ dữ liệu của mình. Ngoài ra, các phương pháp về mạng nơ-ron đồ thị cũng là một giải pháp tiềm năng khi có thể áp dụng cho dữ liệu di truyền.
