@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex thesis"] 1747419390.92433 "thesis.aux" "thesis.bbl" "thesis" 1747419394.28345 0
+["bibtex thesis"] 1747419390.92433 "thesis.aux" "thesis.bbl" "thesis" 1747442655.07754 0
   "./references.bib" 1747419368 6374 43ab52dad9022a27c9af03f40f09dee4 ""
   "c:/texlive/2025/texmf-dist/bibtex/bst/base/plain.bst" 1747188206 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "thesis.aux" 1747419393 11356 f6d452b5ee4e70af6bc32b1e90b69be1 "pdflatex"
+  "thesis.aux" 1747442654 11356 f6d452b5ee4e70af6bc32b1e90b69be1 "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1747419391.34788 "e:/master/documentation/subject/tin_sinh/bao_cao/thesis.tex" "thesis.pdf" "thesis" 1747419394.28404 0
+["pdflatex"] 1747442652.46013 "e:/master/documentation/subject/tin_sinh/bao_cao/thesis.tex" "thesis.pdf" "thesis" 1747442655.07804 0
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1747189007 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1747190685 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1747189954 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -206,7 +206,7 @@
   "chapters/c1.1_machinelearing_methods.tex" 1747419264 18900 8ccc67af07358fafd4c9922cb2c6ed13 ""
   "chapters/c1.2_deeplearning_methods.tex" 1747419384 14529 29ebe1edcb1f0b5892bf1e91c2590557 ""
   "chapters/c1_methods.tex" 1747414132 3303 6f2bc6fd2ed1308e37e0fc5f426d4e69 ""
-  "chapters/c2_experiments.tex" 1747412778 6695 d7351fdd7df8c64ce924d4b89eaeb6a0 ""
+  "chapters/c2_experiments.tex" 1747442652 6755 c8ccabca4a0074c084b77fbdab95fb0d ""
   "chapters/c3_evaluation.tex" 1747414425 4589 2aa055202c3e1b2344e9a987899733e8 ""
   "chapters/glossary.tex" 1747413372 1247 62311a7702f82a3acc90664b103ab5ef ""
   "cover.tex" 1747413464 2359 022e708357f7d21052c7d1b0d31a1389 ""
@@ -215,16 +215,16 @@
   "figures/DeepPL_model.png" 1747318144 1957722 94b95092819a8d50742900cdb0c0a052 ""
   "figures/PhaTYP_Model.png" 1747318144 242372 eb991eb4bf961f225f02ec7b36943f00 ""
   "figures/problem.png" 1747418573 27318 5bca195147f27bfdc1fd9d8659eb69b8 ""
-  "figures/result_deephage_vs_xgboost.png" 1747412486 30722 50e8f299103496edffc88833cbfda4c2 ""
+  "figures/result_deephage_vs_xgboost.png" 1747442431 30339 6ca5b6efce50ecb42e321a8ef1ec1c24 ""
   "figures/result_verify_deephage.png" 1747410748 27287 93aeea3804aec3b95962e4c98757023e ""
   "figures/uet.jpg" 1747318144 76869 1b5f63cb83f025bbfd85971f134e3ca8 ""
-  "thesis.aux" 1747419393 11356 f6d452b5ee4e70af6bc32b1e90b69be1 "pdflatex"
+  "thesis.aux" 1747442654 11356 f6d452b5ee4e70af6bc32b1e90b69be1 "pdflatex"
   "thesis.bbl" 1747419391 2170 4f10b86b9dcf9f95310d1944647a0103 "bibtex thesis"
-  "thesis.lof" 1747419393 1074 723211ade72cdf3d7c30825561c217ad "pdflatex"
-  "thesis.lot" 1747419393 512 ca5cb75aad82bea36e870a8b26b4292f "pdflatex"
-  "thesis.out" 1747419393 9120 b6a346cd987314b81f6fb059c6f65c0d "pdflatex"
+  "thesis.lof" 1747442654 1074 723211ade72cdf3d7c30825561c217ad "pdflatex"
+  "thesis.lot" 1747442654 512 ca5cb75aad82bea36e870a8b26b4292f "pdflatex"
+  "thesis.out" 1747442654 9120 b6a346cd987314b81f6fb059c6f65c0d "pdflatex"
   "thesis.tex" 1747418977 3124 678af8d260c037ef28f183c73aafb83b ""
-  "thesis.toc" 1747419393 4734 8be9cded766eb9eca5fdda3d09dbde4e "pdflatex"
+  "thesis.toc" 1747442654 4734 8be9cded766eb9eca5fdda3d09dbde4e "pdflatex"
   (generated)
   "thesis.aux"
   "thesis.lof"
