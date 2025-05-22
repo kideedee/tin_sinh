@@ -1,10 +1,9 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Sơ đồ mô tả bài toán phân loại thực khuẩn dựa trên tính toán}}{2}{figure.caption.2}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Sơ đồ mô tả bài toán phân loại thực khuẩn dựa trên tính toán}}{3}{figure.caption.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Cấu trúc mạng nơ-ron học sâu và hình ảnh hóa 5 lớp bằng cách giảm kích thước của DeePhage}}{18}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Kiến trúc mô hình PhaTYP sử dụng BERT}}{20}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Kiến trúc mô hình DeepPL sử dụng NDABERT}}{24}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Cấu trúc mạng nơ-ron học sâu và hình ảnh hóa 5 lớp bằng cách giảm kích thước của DeePhage}}{19}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Kiến trúc mô hình PhaTYP sử dụng BERT}}{21}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Kiến trúc mô hình DeepPL sử dụng NDABERT}}{25}{figure.caption.24}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces So sánh hiệu suất phân loại của mô hình DeePhage trên 2 bộ dữ liệu xây dựng và công bố.}}{27}{figure.caption.27}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Kết quả hiệu suất phân loại của mô hình XGBoost trên tập dữ liệu xây dựng.}}{28}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Kết quả hiệu suất phân loại của mô hình XGBoost trên tập dữ liệu xây dựng.}}{27}{figure.caption.27}%
 \addvspace {10\p@ }

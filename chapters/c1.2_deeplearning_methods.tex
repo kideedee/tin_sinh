@@ -100,7 +100,7 @@ Dựa trên kết quả so sánh hiệu suất trên tập dữ liệu kiểm tr
 \label{tab:PhaTPY_Result}
 \begin{tabular}{|l|c|c|c|}
 \hline
-\textbf{Công cụ} & \textbf{Độ nhạy} & \textbf{Độ đặc hiệu} & \textbf{Độ chính xác} \\
+\textbf{Công cụ} & \textbf{Sensitivity} & \textbf{Specificity} & \textbf{Accuracy} \\
 \hline
 PhaTYP             & \textbf{0.99} & \textbf{0.89} & \textbf{0.94} \\
 PhaTYP (without SSL)   & 0.98 & 0.86 & 0.92 \\
@@ -173,7 +173,7 @@ Kết quả thu được 547{,}810 chuỗi từ gen thực khuẩn thể độc 
 \label{tab:performance_comparison_deeppl}
 \begin{tabular}{|l|c|c|c|c|c|}
 \hline
-\textbf{Công cụ} & \textbf{Độ nhạy} & \textbf{Độ đặc hiệu} & \textbf{Độ chính xác} & \textbf{F1-score} & \textbf{MCC} \\
+\textbf{Công cụ} & \textbf{Sensitivity} & \textbf{Specificity} & \textbf{Accuracy} & \textbf{F1-score} & \textbf{MCC} \\
 \hline
 DeepPL   & \textbf{92.24}  & 95.91 & 94.65 & 0.92 & 0.53 \\
 PhaTYP   & 90.44 & 97.47 & \textbf{94.91} & 0.92 & 0.53 \\
@@ -182,6 +182,7 @@ PHACTS   & 38.94 & 79.77 & 48.66 & 0.53 & 0.14 \\
 PhageAI  & 83.33 & 96.08 & 91.17 & 0.87 & 0.50 \\
 \hline
 \end{tabular}
+\label{tbl:deeppl}
 \end{table}
 
 \textbf{DeepPL} cho thấy hiệu suất cao và ổn định trong bài toán phân loại thực khuẩn, với độ nhạy 92.24\%, độ đặc hiệu 95.91\%, độ chính xác 94.65\%, F-score đạt 0.92 và hệ số tương quan Matthews (MCC) là 0.53.

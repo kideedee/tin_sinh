@@ -2,13 +2,39 @@
 \chapter{Kết luận}
 Trong chương này, nhóm sinh viên tóm tắt lại các kết quả đã đạt được, thảo luận thêm về các phương pháp đã được trình bày trong Chương \ref{chap2} và các đề xuất cho hướng nghiên cứu tiếp theo.
 
-\section{Các phương pháp phân loại thực khuẩn}
-Trong báo cáo này, nhóm sinh viên đã trình bày một cách tổng quan về các phương pháp phân loại thực khuẩn dựa trên tính toán. Các phương pháp này bao gồm: PHACTS, PhageAI, BACPHLIP, DeePhage, PhaTYP, DeepPL và được phân chia thành 2 nhóm. Tuy cùng giải quyết một bài toán là phân loại thực khuẩn, hai nhóm lại có cách tiếp cận khác nhau. Nhóm 1 gồm có PHACTS, PhageAI, BACPHLIP là các phương pháp sử dụng các thuật toán học máy truyền thống với đầu vào là bộ dữ liệu di truyền đầy đủ của thực khuẩn. Ta có thể dễ dàng nhận thấy, bài toán mà nhóm phương pháp 1 giải quyết có điều kiện lý tưởng khi mà dữ liệu đầu vào của các thuật toán là bộ dữ liệu di truyền đầy đủ của thực khuẩn, điều khó có thể thu thập được trong thực tế. Sau khi đã đạt các kết quả gần như tuyệt đối với bài toán này, các nhà khoa học dần chuyển sang giải quyết bài toán với điều kiện sát với thực tế hơn, khi mà dữ liệu đầu vào là các đoạn di truyền không đầy đủ, điều thường xuất hiện khi dữ liệu được thu thập. Các phương pháp nhóm 2 gồm có: DeePhage, PhaTYP, DeepPL dần được phát triển để thực hiện phân loại đoạn dữ liệu di truyền không đầy đủ của thực khuẩn.
+\section{Dữ liệu}
 
-Trong các phương pháp của nhóm 2, DeePhage có thể coi là dễ tiếp cận nhất hiện tại khi mang trong mình các ưu điểm: hiệu suất phân loại tốt, thời gian huấn luyện nhanh, mô hình đơn giản. Khi được so sánh với PhaTYP hay DeepPL, hiệu suất phân loại của 2 phương pháp này cao hơn DeePhage khoảng 5\% đến 10\% nhưng cần rất nhiều tài nguyên để có thể thực hiện huấn luyện 2 mô hình này. Với cấu hình phần cứng của nhóm sinh viên, thời gian huấn luyện một vòng của DeePhage chỉ khoảng 3s đến 5s nhưng con số này với các phương pháp dựa trên Bert là 7 giờ tới 10 giờ. Như vậy với điều kiện tài nguyên tính toán không nhiều, DeePhage đang là lựa chọn tối ưu nhất.
+\begin{table}[h]
+\centering
+\caption{Bảng tổng hợp thông tin các bộ dữ liệu}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+\textbf{STT} & \textbf{Phương pháp} & \textbf{Nguồn dữ liệu} & \textbf{Kích thước bộ dữ liệu} & \textbf{Nhãn 1} & \textbf{Nhãn 0} & \textbf{Mô tả} \\ \hline
+1 & PHACTS & PHANTOME & 227 & 148 & 79 &  \\ \hline
+2 & PhageAI & ACLAME và PhagesDB & 597 & 381 & 216 &  \\ \hline
+3 & BACHPHLIP\footnotemark[1] & PHACTS, Mavrich \& Hatfull & 1057 &  &  &  \\ \hline
+4 & DeePhage\footnotemark[2] & PHACTS, NCBI & 1865 & 1288 & 577 & \begin{tabular}[c]{@{}l@{}}Gồm có:\\      - Bộ dữ liệu PHACTS \\      - Dữ liệu thu thập từ NCBI\end{tabular} \\ \hline
+5 & PhaTYP\footnotemark[3] & DeePhage, NCBI, RefSeq & 5339 &  &  & \begin{tabular}[c]{@{}l@{}}Gồm có: \\      - Bộ DeePhage\\      - Bộ từ RefSeq cho tác tự học tự giám sát\\\end{tabular} \\ \hline
+6 & DeepPL\footnotemark[4] & DeePhage, NCBI & 1819 & 1262 & 557 & \begin{tabular}[c]{@{}l@{}}Gồm có:\\      - Bộ dữ liệu DeePhage\\      - Dữ liệu từ NCBI\end{tabular} \\ \hline
+\end{tabular}%
+}
+\label{tbl:ds}
+\end{table}
 
-\section{Các kết quả thực nghiệm đạt được}
-Trong báo cáo, có 2 kịch bản đã được thực hiện: 1 - cài đặt lại DeePhage và so sánh với kết quả được công bố, 2 - tạo một bộ dữ liệu mới, thực hiện so sánh DeePhage và XGBoost. Với thực nghiệm 1, kết quả cho thấy hiệu suất phân loại của mô hình DeePhage được cài đặt lại so với kết quả được công bố ở mức hợp lý, không chênh lệch quá 5\%. Điều này cho thấy mã nguồn cài đặt lại mô hình DeePhage là đáng tin cậy. Với thực nghiệm 2, nhóm sinh viên đã thực hiện tạo một bộ dữ liệu mới dựa trên hai bộ dữ liệu của hai bài báo: DeePhage\cite{wu2021deephage} và DeepPL\cite{zhang2024deeppl}. Kết quả của mô hình DeePhage trên tập này tốt hơn XGBoost ở 2 chỉ số Sensitivity và Accuracy với chênh lệch khoảng từ 2\% đến 5\%. Điều này cho thấy DeePhage nhận diện nhãn 1 - thực khuẩn thể độc lực tốt hơn XGBoost và dự đoán chính xác hơn khi có Accuracy cao hơn. XGBoost tốt hơn DeePhage ở chỉ số Specificity cho thấy mô hình này nhận diện nhãn 0 - thực khuẩn thể ôn hòa tốt hơn DeePhage.
+\footnotetext[1]{Nguồn tải dữ liệu: https://zenodo.org/records/4058664}
+\footnotetext[2]{Nguồn tải dữ liệu: https://gigadb.org/dataset/100918}
+\footnotetext[3]{Nguồn tải dữ liệu: https://github.com/KennthShang/PhaTYP}
+\footnotetext[4]{Nguồn tải dữ liệu: Phần Supporting information trong bài báo}
+
+Bảng \ref{tbl:ds} tổng hợp các thông tin về các bộ dữ liệu được sử dụng trong các bài báo được giới thiệu. Trong các bài báo, bộ dữ liệu của PhageAI hiện không được công bố. Bộ dữ liệu của bài báo hầu hết đều sử dụng bộ dữ liệu trong bài PHACTS kèm theo các dữ liệu được tải thêm ở các nguồn như: NCBI, RefSeq.
+
+\section{Kết quả các bài báo}
+
+Trong báo cáo này, nhóm sinh viên đã trình bày một cách tổng quan về các phương pháp phân loại thực khuẩn dựa trên tính toán. Kết quả hiệu suất phân loại giữa các công cụ được trình bày chi tiết trong Bảng \ref{tbl:deeppl}. Các phương pháp này bao gồm: PHACTS, PhageAI, BACPHLIP, DeePhage, PhaTYP, DeepPL. Tuy cùng giải quyết một bài toán là phân loại thực khuẩn, hai nhóm lại có cách tiếp cận khác nhau. Nhóm 1 gồm có PHACTS, PhageAI, BACPHLIP là các phương pháp sử dụng các thuật toán học máy truyền thống với đầu vào là bộ dữ liệu di truyền đầy đủ của thực khuẩn. Ta có thể dễ dàng nhận thấy, bài toán mà nhóm phương pháp 1 giải quyết có điều kiện lý tưởng khi mà dữ liệu đầu vào của các thuật toán là bộ dữ liệu di truyền đầy đủ của thực khuẩn, điều khó có thể thu thập được trong thực tế. Sau khi đã đạt các kết quả gần như tuyệt đối với bài toán này, các nhà khoa học dần chuyển sang giải quyết bài toán với điều kiện sát với thực tế hơn, khi mà dữ liệu đầu vào là các đoạn di truyền không đầy đủ, điều thường xuất hiện khi dữ liệu được thu thập. Các phương pháp nhóm 2 gồm có: DeePhage, PhaTYP, DeepPL dần được phát triển để thực hiện phân loại đoạn dữ liệu di truyền không đầy đủ của thực khuẩn.
+
+\section{Kết quả thực nghiệm}
+Trong báo cáo, nhóm sinh viên đã thực hiện mô phỏng lại DeePhage và so sánh với mô hình XGBoost. Với thực nghiệm 2, nhóm sinh viên đã thực hiện tạo một bộ dữ liệu mới dựa trên hai bộ dữ liệu của hai bài báo: DeePhage\cite{wu2021deephage} và DeepPL\cite{zhang2024deeppl}. Kết quả của mô hình DeePhage trên tập này tốt hơn XGBoost ở 2 chỉ số Sensitivity và Accuracy với chênh lệch khoảng từ 2\% đến 5\%. Điều này cho thấy DeePhage nhận diện nhãn 1 - thực khuẩn thể độc lực tốt hơn XGBoost và dự đoán chính xác hơn khi có Accuracy cao hơn. XGBoost tốt hơn DeePhage ở chỉ số Specificity cho thấy mô hình này nhận diện nhãn 0 - thực khuẩn thể ôn hòa tốt hơn DeePhage.
 
 \section{Hướng nghiên cứu tiếp theo}
 Trong tương lai, nhóm sinh viên dự định sẽ tiếp tục tìm hiểu, áp dụng và cải tiến các phương pháp phân loại thực khuẩn dựa trên tính toán khác. Hiện tại, các phương pháp được áp dụng chủ yếu là tinh chỉnh một mô hình đã được huấn luyện trước sau đó dùng chúng để thực hiện phân loại. Nhóm tác giả của mô hình DNABERT\cite{ji2021dnabert} đã công bố 2 phiên bản nâng cấp là DNABERT-2\cite{zhou2023dnabert} và DNABERT-S\cite{zhou2024dnabert}. Nhóm sinh viên sẽ tiếp tục tìm hiểu và tìm cách áp dụng để cải thiện hiệu suất phân loại trên bộ dữ liệu của mình. Ngoài ra, các phương pháp về mạng nơ-ron đồ thị cũng là một giải pháp tiềm năng khi có thể áp dụng cho dữ liệu di truyền.
