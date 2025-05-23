@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex thesis"] 1747882471.20182 "thesis.aux" "thesis.bbl" "thesis" 1747991103.31366 0
+["bibtex thesis"] 1747882471.20182 "thesis.aux" "thesis.bbl" "thesis" 1747991719.35481 0
   "./references.bib" 1747990933.46942 7641 65ea7c3491df5d3221f4138baeb93c9b ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "thesis.aux" 1747991103.0346 10930 3213708344a5a4027714b5893d3406e8 "pdflatex"
+  "thesis.aux" 1747991719.13773 10930 3213708344a5a4027714b5893d3406e8 "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1747991101.67824 "/Users/tutb/Documents/GitHub/tin_sinh/thesis.tex" "thesis.pdf" "thesis" 1747991103.3138 0
+["pdflatex"] 1747991718.19389 "/Users/tutb/Documents/GitHub/tin_sinh/thesis.tex" "thesis.pdf" "thesis" 1747991719.35492 0
   "/Users/tutb/Documents/GitHub/tin_sinh/thesis.tex" 1747990933.47378 3252 3cae28cafc685c3e743797a8b3271c46 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -220,7 +220,7 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1747361167 3345739 d4d9690ae3292238898e9d83bc6ba9b5 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "chapters/abtract_vi.tex" 1747990933.46165 3363 a7c90944eb81f9491b16f671dc120a10 ""
-  "chapters/c0_introduction.tex" 1747991101.49279 14082 c9371fd56b3f6bd55a77d213cd730547 ""
+  "chapters/c0_introduction.tex" 1747991717.97261 14069 90065c3bd30c93731314cc235de616aa ""
   "chapters/c1.1_machinelearing_methods.tex" 1747990933.46194 18463 86711252a07902cc52aef0e7d2266dc5 ""
   "chapters/c1.2_deeplearning_methods.tex" 1747990933.46204 14512 ac61461078a4f18ca2160a77c3c636dc ""
   "chapters/c1_methods.tex" 1747990933.46209 3317 41e5505ec063aab9ee75d0bd146e261c ""
@@ -234,13 +234,13 @@
   "figures/problem.png" 1747990933.4664 27318 5ea72b743a3958fefd6f1ecbb88542b3 ""
   "figures/result_deephage_vs_xgboost.png" 1747990933.4665 30339 1cc0955abe6078efe88d92969e55e441 ""
   "figures/uet.jpg" 1747990933.4668 76869 27b019cd7517e45c2541c4acbadcb4ae ""
-  "thesis.aux" 1747991103.0346 10930 3213708344a5a4027714b5893d3406e8 "pdflatex"
+  "thesis.aux" 1747991719.13773 10930 3213708344a5a4027714b5893d3406e8 "pdflatex"
   "thesis.bbl" 1747990933.46959 2961 36dbf7d240d5d1ccde47758887abb399 "bibtex thesis"
-  "thesis.lof" 1747991103.03647 879 49dee35111476e6d7d2469c2d839ecd8 "pdflatex"
-  "thesis.lot" 1747991103.03651 644 eeae2b5c3554c7316b916b376ef7b210 "pdflatex"
-  "thesis.out" 1747991103.0361 7789 a1b3ff7dd81e02ed7a8cffdf092ac400 "pdflatex"
+  "thesis.lof" 1747991719.13904 879 49dee35111476e6d7d2469c2d839ecd8 "pdflatex"
+  "thesis.lot" 1747991719.13906 644 eeae2b5c3554c7316b916b376ef7b210 "pdflatex"
+  "thesis.out" 1747991719.13872 7789 a1b3ff7dd81e02ed7a8cffdf092ac400 "pdflatex"
   "thesis.tex" 1747990933.47378 3252 3cae28cafc685c3e743797a8b3271c46 ""
-  "thesis.toc" 1747991103.03637 4197 c0060ed1c7a53253a84621e0dea54f5d "pdflatex"
+  "thesis.toc" 1747991719.13887 4197 c0060ed1c7a53253a84621e0dea54f5d "pdflatex"
   (generated)
   "thesis.aux"
   "thesis.lof"

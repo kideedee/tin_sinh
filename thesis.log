@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.16)  23 MAY 2025 16:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.16)  23 MAY 2025 16:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1073,7 +1073,7 @@ l.96 \input{chapters/abtract_vi}\newpage
 Ch\uhorn \ohorn ng 1.
 
 LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 11.
+(Font)              size <12> substituted on input line 9.
 
 
 
@@ -1085,7 +1085,7 @@ LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <13> not available
 <figures/problem.png, id=289, 621.07031pt x 140.77594pt>
 File: figures/problem.png Graphic file (type png)
 <use figures/problem.png>
-Package pdftex.def Info: figures/problem.png  used on input line 33.
+Package pdftex.def Info: figures/problem.png  used on input line 31.
 (pdftex.def)             Requested size: 455.24411pt x 103.18874pt.
 
 
@@ -1094,48 +1094,48 @@ Package pdftex.def Info: figures/problem.png  used on input line 33.
 [3 <./figures/problem.png>]
 
 [4]
-LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 72.
+LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 70.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/vntex/t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T5/cmtt/bx/n' in size <13> not available
-(Font)              Font shape `T5/cmtt/m/n' tried instead on input line 72.
+(Font)              Font shape `T5/cmtt/m/n' tried instead on input line 70.
 
 
 [5]
-Overfull \hbox (6.22392pt too wide) in paragraph at lines 131--131
+Overfull \hbox (6.22392pt too wide) in paragraph at lines 129--129
 []\T5/cmtt/m/n/13 LOCUS       AF503408    101660 bp    DNA     linear   PHG 28-APR-2006[] 
  []
 
 
 
 [6]
-Overfull \hbox (6.22392pt too wide) in paragraph at lines 131--131
+Overfull \hbox (6.22392pt too wide) in paragraph at lines 129--129
 []  \T5/cmtt/m/n/13 1 acattatacg aagttatatt aagggttatt gaacatgatc aatttacctg taaatccata[] 
  []
 
 
-Overfull \hbox (6.22392pt too wide) in paragraph at lines 131--131
+Overfull \hbox (6.22392pt too wide) in paragraph at lines 129--129
 [] \T5/cmtt/m/n/13 61 cagttcaata ccttatcagg tcaaatagtg atcacttgat catttgatca agtttgcgct[] 
  []
 
 
-Overfull \hbox (6.22392pt too wide) in paragraph at lines 131--131
+Overfull \hbox (6.22392pt too wide) in paragraph at lines 129--129
 []\T5/cmtt/m/n/13 121 acgtaaaatc tgtgaaaagt tggcagtgtt agtgctccag atttcgcgta gcgcacttag[] 
  []
 
 
-Overfull \hbox (6.22392pt too wide) in paragraph at lines 131--131
+Overfull \hbox (6.22392pt too wide) in paragraph at lines 129--129
 []\T5/cmtt/m/n/13 181 caccaccaat caatcagagg tgaaaaatgg gatattcagc tgctaaagtg tccactcatc[] 
  []
 
 
-Overfull \hbox (6.22392pt too wide) in paragraph at lines 131--131
+Overfull \hbox (6.22392pt too wide) in paragraph at lines 129--129
 []\T5/cmtt/m/n/13 241 ttgagcttga gaaaaaccgt ggttactggc gggcaaaagg gtttgatcgt gatagttgcc[] 
  []
 
 
-Overfull \hbox (6.22392pt too wide) in paragraph at lines 131--131
+Overfull \hbox (6.22392pt too wide) in paragraph at lines 129--129
 []\T5/cmtt/m/n/13 301 aactgtcatt atcgcgcggt gaagagaaaa tagtacgcac gcgcggtcgc tggcgtttct[] 
  []
 
@@ -1291,7 +1291,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  108i,17n,107p,1700b,600s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vntt12.pfb>
-Output written on thesis.pdf (41 pages, 2747676 bytes).
+Output written on thesis.pdf (41 pages, 2747648 bytes).
 PDF statistics:
  611 PDF objects out of 1000 (max. 8388607)
  526 compressed objects within 6 object streams
