@@ -22,6 +22,40 @@ Sau khi tìm hiểu các bài báo, nhóm sinh viên thực hiện xây dựng b
 \end{itemize}
 
 \section{Kết quả}
+\subsection{Kết quả thực nghiệm với PhageAI}
+Trong thí nghiệm này, chúng tôi thực hiện thử nghiệm các thuật toán học máy trong bài báo PhageAI với bộ dữ liệu mới. Các mô hình đều sử dụng BayesianSearch để tối ưu lựa chọn các bộ tham số tốt nhất. Riêng với thuật toán SVM, chúng tôi sử dụng bộ tham số đã được tác giả công bố trong bài báo.
+\begin{table}[ht]
+\footnotesize
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Model} & \textbf{Accuracy} & \textbf{Sensitivity (Class 1)} & \textbf{Specificity (Class 0)} \\
+\hline
+GaussianNB & 0.649 & 0.780 & 0.365 \\
+SGDClassifier & 0.864 & 0.861 & 0.869 \\
+MLPClassifier & 0.901 & 0.946 & 0.803 \\
+RandomForestClassifier & 0.928 & \textbf{0.963} & 0.854 \\
+SVC & 0.901 & 0.882 & \textbf{0.942} \\
+KNeighborsClassifier & 0.910 & 0.909 & 0.912 \\
+GradientBoostingClassifier & 0.930 & 0.951 & 0.882 \\
+XGBoost & \textbf{0.936} & 0.959 & 0.883 \\
+LightGBM & 0.933 & 0.951 & 0.878 \\
+CatBoost & 0.931 & 0.953 & 0.870 \\
+\hline
+\end{tabular}
+\caption{Kết quả so sánh các thuật toán học máy theo Accuracy, Sensitivity và Specificity trên bộ dữ liệu kết hợp.}
+\label{tab:model_comparison}
+\end{table}
+
+Dựa trên kết quả Bảng \ref{tab:model_comparison}, có thể thấy rằng các mô hình thuộc nhóm ensemble learning, đặc biệt là các thuật toán Boosting như XGBoost, LightGBM, CatBoost và GradientBoostingClassifier, đều cho hiệu suất rất cao trên cả ba chỉ số: Accuracy, Sensitivity và Specificity. Trong đó, XGBoost đạt Accuracy cao nhất (0.936), đồng thời duy trì mức Sensitivity (0.959) và Specificity (0.883) rất cân bằng, cho thấy khả năng phân biệt tốt giữa hai lớp.
+
+RandomForestClassifier cũng thể hiện hiệu quả cao với Accuracy 0.928, tuy nhiên có phần thiên lệch hơn về Sensitivity (0.963) so với Specificity (0.854), nghĩa là mô hình có xu hướng nhạy hơn với lớp dương (Class 1).
+
+Ở nhóm mô hình cơ bản hơn như GaussianNB và SGDClassifier, kết quả không thực sự khả quan. Đặc biệt, GaussianNB cho Specificity chỉ ở mức 0.365, cho thấy mô hình này khó phân biệt được lớp âm (Class 0), mặc dù có Sensitivity tương đối tốt (0.780). Điều này thường xảy ra khi dữ liệu không phù hợp với giả định phân phối chuẩn của Naive Bayes.
+
+MLPClassifier và SVC đều có Accuracy trên 0.9, nhưng mỗi mô hình có thiên hướng riêng: MLPClassifier nghiêng về phát hiện Class 1 (Sensitivity cao 0.946), trong khi SVC lại rất mạnh trong việc nhận diện Class 0 (Specificity 0.942).
+
+Tổng thể, như vậy khác với tập dữ liệu của bài báo với SVC cho kết quả tốt nhất thì trong thực nghiệm này, các mô hình Boosting như XGBoost và GradientBoostingClassifier tỏ ra vượt trội về độ chính xác và cân bằng giữa các chỉ số, phù hợp với các bài toán phân loại nhị phân có yêu cầu cao về độ tin cậy. 
 \subsection{So sánh hiệu suất phân loại giữa DeePhage và XGBoost trên bộ dữ liệu xây dựng}
 
 \begin{figure}[H]
