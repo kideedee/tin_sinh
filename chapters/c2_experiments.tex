@@ -69,8 +69,8 @@ Sau khi tìm hiểu các bài báo, nhóm báo cáo thực hiện xây dựng b�
     \item Specificity: sử dụng để đo lường độ phủ của mô hình trên nhãn 0.
 \end{itemize}
 
-
-\section{Thực nghiệm với mô hình PHACTS}
+\section{Kết quả}
+\subsection{Thực nghiệm với mô hình PHACTS}
 Để tiến hành thực nghiệm với mô hình PHACTS, nhóm báo cáo đã sử dụng bộ mã nguồn của mô hình PHACTS được nhóm tác giả công bố trên Github tại địa chỉ: \url{https://github.com/deprekate/PHACTS} (truy cập ngày 23 tháng 5 năm 2025). Quá trình thực hiện các thực nghiệm có các bước như sau:
 \begin{itemize}
     \item \textbf{Xử lí đữ liệu} Bộ dữ liệu chung của nhóm báo cáo chứa thông tin DNA, trong khi PHACTS yêu cầu đầu vào là dữ liêu protein. Do đó, nhóm báo cáo thực hiện chuyển đổi bộ dữ liệu đầu vào từ DNA sang protein. 
@@ -99,17 +99,10 @@ Sau khi tìm hiểu các bài báo, nhóm báo cáo thực hiện xây dựng b�
 
 Nhóm báo cáo nhận thấy rằng, với bộ dữ liệu dùng chung ở trên, mô hình PHACTS cho kết quả Accuracy là 71.24\%, Sensitivity là 82.77\% và Specificity là 46.52\%. Kết quả này thấp hơn nhiều so với kết quả công bố của nhóm tác giả PHACTS (đã đề cập ở phần trước).
 
-\section{Thực nghiệm với mô hình Phage AI}
-<<Nam điền kết quả>>
-
-\section{Thực nghiệm với mô hình DeePhage}
-<<Sơn điền kết quả>>
-
-\section{So sánh kết quả thực nghiệm giữa các mô hình}
 
 
 
-\section{Kết quả}
+
 \subsection{Kết quả thực nghiệm với PhageAI}
 Trong thí nghiệm này, chúng tôi thực hiện thử nghiệm các thuật toán học máy trong bài báo PhageAI với bộ dữ liệu mới. Các mô hình đều sử dụng BayesianSearch để tối ưu lựa chọn các bộ tham số tốt nhất. Riêng với thuật toán SVM, chúng tôi sử dụng bộ tham số đã được tác giả công bố trong bài báo.
 \begin{table}[ht]
@@ -144,6 +137,13 @@ RandomForestClassifier cũng thể hiện hiệu quả cao với Accuracy 0.928,
 MLPClassifier và SVC đều có Accuracy trên 0.9, nhưng mỗi mô hình có thiên hướng riêng: MLPClassifier nghiêng về phát hiện Class 1 (Sensitivity cao 0.946), trong khi SVC lại rất mạnh trong việc nhận diện Class 0 (Specificity 0.942).
 
 Tổng thể, như vậy khác với tập dữ liệu của bài báo với SVC cho kết quả tốt nhất thì trong thực nghiệm này, các mô hình Boosting như XGBoost và GradientBoostingClassifier tỏ ra vượt trội về độ chính xác và cân bằng giữa các chỉ số, phù hợp với các bài toán phân loại nhị phân có yêu cầu cao về độ tin cậy. 
+
+
+\subsection{Thực nghiệm với mô hình DeePhage}
+<<Sơn điền kết quả>>
+
+\section{So sánh kết quả thực nghiệm giữa các mô hình}
+
 
 \subsection{So sánh hiệu suất phân loại giữa DeePhage và XGBoost trên bộ dữ liệu xây dựng}
 
