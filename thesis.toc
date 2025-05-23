@@ -35,12 +35,15 @@
 \contentsline {paragraph}{Giai đoạn phân loại:}{21}{section*.17}%
 \contentsline {section}{\numberline {2.9}DeepPL}{23}{section.2.9}%
 \contentsline {chapter}{\numberline {3}Thực nghiệm}{26}{chapter.3}%
-\contentsline {section}{\numberline {3.1} Xây dựng bộ dữ liệu}{26}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Xây dựng bộ dữ liệu}{26}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1} Xử lý nhãn }{26}{subsection.3.1.1}%
 \contentsline {section}{\numberline {3.2}Kịch bản thực nghiệm}{26}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Các chỉ số đánh giá}{27}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Kết quả}{27}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}So sánh hiệu suất phân loại giữa DeePhage và XGBoost trên bộ dữ liệu xây dựng}{27}{subsection.3.4.1}%
+\contentsline {section}{\numberline {3.4}Thực nghiệm với mô hình PHACTS}{27}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Thực nghiệm với mô hình Phage AI}{27}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Thực nghiệm với mô hình DeePhage}{27}{section.3.6}%
+\contentsline {section}{\numberline {3.7}So sánh kết quả thực nghiệm giữa các mô hình}{28}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}So sánh hiệu suất phân loại giữa DeePhage và XGBoost trên bộ dữ liệu xây dựng}{28}{subsection.3.7.1}%
 \contentsline {chapter}{\numberline {4}Kết luận}{29}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Dữ liệu}{29}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Kết quả các bài báo}{29}{section.4.2}%
