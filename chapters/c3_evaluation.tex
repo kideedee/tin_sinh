@@ -3,35 +3,65 @@
 Trong chương này, nhóm sinh viên tóm tắt lại các kết quả đã đạt được, thảo luận thêm về các phương pháp đã được trình bày trong Chương \ref{chap2} và các đề xuất cho hướng nghiên cứu tiếp theo.
 
 \section{Dữ liệu}
+Các bộ dữ liệu được đề cập đến trong các phương pháp bao gồm:
+\begin{itemize}
+    \item PHACTS: Nhóm tác giả PHACTS đã sử dụng bộ dữ liệu PHANTOME. Trong bộ dữ liệu PHANTOME có 654 bộ gen thực khuẩn. Tuy nhiên, nhóm tác giả PHACTS đã lựa chọn thủ công và chỉ sử dụng 227 dữ liệu. Trong đó bao gồm 148 bộ gen thực khuẩn thể ôn hoà và 79 bộ gen thực khuẩn thể độc lực. Tỉ lệ nhãn trong bộ dữ liệu này là 2:1. Bộ dữ liệu này cũng được đề cập và sử dụng lại ở các phương pháp khác là DeePhage, PhaTYP và PhageBERT.
+    \item ACLAME và PhagesDB: Nhóm tác giả PhageAI đã sử dụng hai bộ dữ liệu này để huấn luyện mô hình phân loại thực khuẩn. Trong bài báo, nhóm tác giả không mô tả chi tiết về số lượng dữ liệu cũng như cách chọn dữ liệu từ hai tập dữ liệu này. Nhóm tác giả chỉnh sửa thủ công và chọn ra bộ dữ liệu huấn luyện gồm: 278 bộ gen thực khuẩn thể độc lực và 174 bộ gen thực khuẩn thể ôn hoà. Và bộ dữ liệu thử nghiệm gồm 54 bộ gen thực khuẩn thể độc lực và 30 bộ gen thực khuẩn thể ôn hoà. Tổng cả có thể xem bộ dữ liệu này gồm 536 bộ gen thực khuẩn.
+    \item Mavrich \& Hatfull (2017): Bộ dữ liệu này được giới thiệu ở bài báo của Mavrich \& Hatfull (2017). Bộ dữ liệu này gồm 1057 bộ gen thực khuẩn. 
+    \item NCBI-tháng 3 năm 2021: Bộ dữ liệu này gồm 1640 bộ gen thực khuẩn. Trong đó, 1211 bộ gen thực khuẩn thể độc lực và 429 bộ gen thực khuẩn thể ôn hoà. 
+    \item NCBI RefSeq 2022: Bộ dữ liệu này gồm 3474 bộ gen thực khuẩn được công bố trước năm 2022. Bộ dữ liệu này được PhaTYP sử dụng cho nhiệm vụ học tự giám sát và nhiệm vụ tinh chỉnh. Trong đó, nhiệm vụ học tự giám sát sử dụng 3474 bộ gen thực khuẩn. Nhiệm vụ tinh chỉnh sử dụng 1290 thực khuẩn thể độc lực và 577 thực khuẩn thể ôn hoà.
+    \item NCBI- tháng 10 năm 2024: Nhóm tác giả của DeepPL sử dụng cơ sở dữ liệu NCBI với các cập nhật mới hơn bản tháng 3 năm 2021. Nhóm tác giả DeepPL sử dụng bộ dữ liệu huấn luyện gồm 1262 bộ gen thực khuẩn thể độc lực và 557 bộ gen thực khuẩn thể ôn hoà. Tập dữ liệu kiểm thử gồm 245 bộ gen thực khuẩn thể độc lực và 129 bộ gen thực khuẩn thể ôn hoà. 
+\end{itemize}
 
+Các bộ dữ liệu trên được sử dụng ở các phương pháp như sau:
 \begin{table}[h]
 \centering
-\caption{Bảng tổng hợp thông tin các bộ dữ liệu}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|l|l|l|l|l|l|l|}
 \hline
-\textbf{STT} & \textbf{Phương pháp} & \textbf{Nguồn dữ liệu} & \textbf{Kích thước bộ dữ liệu} & \textbf{Nhãn 1} & \textbf{Nhãn 0} & \textbf{Mô tả} \\ \hline
-1 & PHACTS & PHANTOME & 227 & 148 & 79 &  \\ \hline
-2 & PhageAI & ACLAME và PhagesDB & 597 & 381 & 216 &  \\ \hline
-3 & BACHPHLIP\footnotemark[1] & PHACTS, Mavrich \& Hatfull & 1057 &  &  &  \\ \hline
-4 & DeePhage\footnotemark[2] & PHACTS, NCBI & 1865 & 1288 & 577 & \begin{tabular}[c]{@{}l@{}}Gồm có:\\      - Bộ dữ liệu PHACTS \\      - Dữ liệu thu thập từ NCBI\end{tabular} \\ \hline
-5 & PhaTYP\footnotemark[3] & DeePhage, NCBI, RefSeq & 5339 &  &  & \begin{tabular}[c]{@{}l@{}}Gồm có: \\      - Bộ DeePhage\\      - Bộ từ RefSeq cho tác tự học tự giám sát\\\end{tabular} \\ \hline
-6 & DeepPL\footnotemark[4] & DeePhage, NCBI & 1819 & 1262 & 557 & \begin{tabular}[c]{@{}l@{}}Gồm có:\\      - Bộ dữ liệu DeePhage\\      - Dữ liệu từ NCBI\end{tabular} \\ \hline
+\textbf{STT} & \textbf{Phương pháp} & \textbf{Nguồn dữ liệu} & \textbf{Kích thước bộ dữ liệu} & \textbf{Nhãn 1} & \textbf{Nhãn 0} \\ \hline
+1 & PHACTS & PHANTOME & 227 & 148 & 79   \\ \hline
+2 & PhageAI & ACLAME và PhagesDB & 597 & 381 & 216   \\ \hline
+3 & BACHPHLIP\footnotemark[1] & PHACTS, Mavrich \& Hatfull & 1057 &  &    \\ \hline
+4 & DeePhage\footnotemark[2] & PHACTS, NCBI & 1865 & 1288 & 577  \\ \hline
+5 & PhaTYP\footnotemark[3] & DeePhage, NCBI, RefSeq & 5339 &  &  \\ \hline
+6 & DeepPL\footnotemark[4] & DeePhage, NCBI & 1819 & 1262 & 557 \\ \hline
 \end{tabular}%
 }
+\caption{Bảng tổng hợp thông tin các bộ dữ liệu}
 \label{tbl:ds}
 \end{table}
+
+Từ bảng \ref{tbl:ds}, ta có thể thấy rằng các phương pháp được phát triển sau có xu hướng sử dụng bộ dữ liệu lớn hơn so với các phương pháp trước đó. Điều này cho thấy rằng, các phương pháp sau đã có sự cải tiến trong việc thu thập và xử lý dữ liệu đầu vào.
 
 \footnotetext[1]{Nguồn tải dữ liệu: https://zenodo.org/records/4058664}
 \footnotetext[2]{Nguồn tải dữ liệu: https://gigadb.org/dataset/100918}
 \footnotetext[3]{Nguồn tải dữ liệu: https://github.com/KennthShang/PhaTYP}
 \footnotetext[4]{Nguồn tải dữ liệu: Phần Supporting information trong bài báo}
 
-Bảng \ref{tbl:ds} tổng hợp các thông tin về các bộ dữ liệu được sử dụng trong các bài báo được giới thiệu. Trong các bài báo, bộ dữ liệu của PhageAI hiện không được công bố. Bộ dữ liệu của bài báo hầu hết đều sử dụng bộ dữ liệu trong bài PHACTS kèm theo các dữ liệu được tải thêm ở các nguồn như: NCBI, RefSeq.
+\section{Phương pháp}
 
-\section{Kết quả các bài báo}
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{STT} & \textbf{Phương pháp} & \textbf{Phương pháp mã hóa} & \textbf{Mô hình sử dụng} \\ \hline
+1 & PHACTS & \begin{tabular}[c]{@{}l@{}}Tạo véc-tơ đặc trưng tương đồng thông qua \\ tập protein được xây dựng dựa   trên bộ dữ liệu\end{tabular} & Random Forest \\ \hline
+2 & PhageAI & \begin{tabular}[c]{@{}l@{}}Sử dụng kmer để đưa dữ liệu di truyền về dạng văn bản, \\ sau đó sử dụng Word2Vec để mã hóa dữ liệu\end{tabular} & Các mô hình học máy truyền thống \\ \hline
+3 & BACPHLIP & \begin{tabular}[c]{@{}l@{}}Tạo véc-tơ đặc trưng nhị phân biểu diễn \\ sự xuất hiện của vùng protein bảo   tồn.\end{tabular} & Random Forest \\ \hline
+4 & DeePhage & Tạo các véc-tơ one-hot biểu diễn cho các nucleotide & CNN \\ \hline
+5 & PhaTYP & Sử dụng Bert để mã hóa dữ liệu với token là k-mer & Bert \\ \hline
+6 & DeepPL & Sử dụng Bert để mã hóa dữ liệu với token là protein. & Bert \\ \hline
+\end{tabular}%
+}
+\caption{Bảng tổng hợp phương pháp và mô hình các bài báo sử dụng}
+\label{tab:methods}
+\end{table}
 
-Trong báo cáo này, nhóm sinh viên đã trình bày một cách tổng quan về các phương pháp phân loại thực khuẩn dựa trên tính toán. Kết quả hiệu suất phân loại giữa các công cụ được trình bày chi tiết trong Bảng \ref{tbl:deeppl}. Các phương pháp này bao gồm: PHACTS, PhageAI, BACPHLIP, DeePhage, PhaTYP, DeepPL. Tuy cùng giải quyết một bài toán là phân loại thực khuẩn, hai nhóm lại có cách tiếp cận khác nhau. Nhóm 1 gồm có PHACTS, PhageAI, BACPHLIP là các phương pháp sử dụng các thuật toán học máy truyền thống với đầu vào là bộ dữ liệu di truyền đầy đủ của thực khuẩn. Ta có thể dễ dàng nhận thấy, bài toán mà nhóm phương pháp 1 giải quyết có điều kiện lý tưởng khi mà dữ liệu đầu vào của các thuật toán là bộ dữ liệu di truyền đầy đủ của thực khuẩn, điều khó có thể thu thập được trong thực tế. Sau khi đã đạt các kết quả gần như tuyệt đối với bài toán này, các nhà khoa học dần chuyển sang giải quyết bài toán với điều kiện sát với thực tế hơn, khi mà dữ liệu đầu vào là các đoạn di truyền không đầy đủ, điều thường xuất hiện khi dữ liệu được thu thập. Các phương pháp nhóm 2 gồm có: DeePhage, PhaTYP, DeepPL dần được phát triển để thực hiện phân loại đoạn dữ liệu di truyền không đầy đủ của thực khuẩn.
+Trong báo cáo này, nhóm sinh viên đã trình bày một cách tổng quan về các phương pháp phân loại thực khuẩn dựa trên tính toán. Bảng \ref{tab:methods} tổng hợp lại các phương pháp mã hóa dữ liệu và mô hình mà các tác giả sử dụng. Các phương pháp này bao gồm: PHACTS, PhageAI, BACPHLIP, DeePhage, PhaTYP, DeepPL. Tuy cùng giải quyết một bài toán là phân loại thực khuẩn, hai nhóm lại có cách tiếp cận khác nhau. Nhóm 1 gồm có PHACTS, PhageAI, BACPHLIP là các phương pháp sử dụng các thuật toán học máy truyền thống với đầu vào là bộ dữ liệu di truyền đầy đủ của thực khuẩn. Ta có thể dễ dàng nhận thấy, bài toán mà nhóm phương pháp 1 giải quyết có điều kiện lý tưởng khi mà dữ liệu đầu vào của các thuật toán là bộ dữ liệu di truyền đầy đủ của thực khuẩn, điều khó có thể thu thập được trong thực tế. Sau khi đã đạt các kết quả gần như tuyệt đối với bài toán này, các nhà khoa học dần chuyển sang giải quyết bài toán với điều kiện sát với thực tế hơn, khi mà dữ liệu đầu vào là các đoạn di truyền không đầy đủ, điều thường xuất hiện khi dữ liệu được thu thập. Các phương pháp nhóm 2 gồm có: DeePhage, PhaTYP, DeepPL dần được phát triển để thực hiện phân loại đoạn dữ liệu di truyền không đầy đủ của thực khuẩn.
 
 \section{Kết quả thực nghiệm}
 Trong báo cáo, nhóm sinh viên đã thực hiện mô phỏng lại DeePhage và so sánh với mô hình XGBoost. Với thực nghiệm 2, nhóm sinh viên đã thực hiện tạo một bộ dữ liệu mới dựa trên hai bộ dữ liệu của hai bài báo: DeePhage\cite{wu2021deephage} và DeepPL\cite{zhang2024deeppl}. Kết quả của mô hình DeePhage trên tập này tốt hơn XGBoost ở 2 chỉ số Sensitivity và Accuracy với chênh lệch khoảng từ 2\% đến 5\%. Điều này cho thấy DeePhage nhận diện nhãn 1 - thực khuẩn thể độc lực tốt hơn XGBoost và dự đoán chính xác hơn khi có Accuracy cao hơn. XGBoost tốt hơn DeePhage ở chỉ số Specificity cho thấy mô hình này nhận diện nhãn 0 - thực khuẩn thể ôn hòa tốt hơn DeePhage.

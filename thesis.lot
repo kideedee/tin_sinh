@@ -5,8 +5,8 @@
 \contentsline {table}{\numberline {2.3}{\ignorespaces So sánh hiệu suất của PhaTYP với các công cụ khác.}}{24}{table.caption.22}%
 \contentsline {table}{\numberline {2.4}{\ignorespaces So sánh hiệu suất giữa DeepPL và các công cụ khác.}}{27}{table.caption.28}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Tổng hợp bộ dữ liệu của các phương pháp đã đề cập}}{29}{table.caption.29}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Kết quả thực nghiệm với mô hình PHACTS}}{32}{table.caption.30}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Kết quả so sánh các thuật toán học máy theo Accuracy, Sensitivity và Specificity trên bộ dữ liệu kết hợp.}}{32}{table.caption.31}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Kết quả thực nghiệm với mô hình PHACTS}}{29}{table.caption.29}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Kết quả so sánh các thuật toán học máy theo Accuracy, Sensitivity và Specificity trên bộ dữ liệu kết hợp.}}{30}{table.caption.30}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Bảng tổng hợp thông tin các bộ dữ liệu}}{35}{table.caption.33}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Bảng tổng hợp thông tin các bộ dữ liệu}}{34}{table.caption.32}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Bảng tổng hợp phương pháp và mô hình các bài báo sử dụng}}{35}{table.caption.33}%
