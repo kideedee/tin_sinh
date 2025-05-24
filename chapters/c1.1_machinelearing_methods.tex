@@ -2,12 +2,12 @@
 
 PHACTS\cite{mcnair2012phacts} là một trong những công cụ tiên phong trong việc phân loại thực khuẩn thể theo vòng đời dựa trên bộ gen đầy đủ. Công cụ này sử dụng thuật toán rừng ngẫu nhiên để xây dựng mô hình học máy dựa trên mức độ tương đồng protein giữa các thực khuẩn.
 
-\subsection{Dữ liệu huấn luyện}
+\subsection*{Dữ liệu huấn luyện}
 Dữ liệu huấn luyện được sử dụng trong bài báo là dữ liệu thu thập từ cơ sở dữ liệu PHANTOME, gồm 654 bộ gen thực khuẩn. Trong đó, dữ liệu được sử dụng cho huấn luyện gồm 227 thực khuẩn có vòng đời đã được xác nhận bằng phương pháp thủ công từ nhiều nguồn tài liệu khác nhau, cụ thể tập huấn luyện chứa 148 thực khuẩn thể ôn hoà và 79 thực khuẩn thể độc lực. Đặc điểm của tập dữ liệu này là tỷ lệ lớp không cân bằng (2:1), phản ánh đúng về sự phân bố dữ liệu của thực khuẩn thể ôn hoà trong dữ liệu.
 
 Để đảm bảo tính khách quan trong đánh giá mô hình, các thực khuẩn có độ tương đồng cao về protein (>90\% protein giống nhau với >90\% độ tương đồng) với thực khuẩn đang được kiểm tra sẽ bị loại khỏi tập huấn luyện. Điều này giúp tránh tình trạng mô hình "học tủ" và đánh giá chính xác khả năng tổng quát hóa.
 
-\subsection{Phương pháp}
+\subsection*{Phương pháp}
 
 \textbf{Tạo tập protein chuẩn} (\textit{query proteins}): Một tập hợp các chuỗi protein truy vấn \( Q = \{P_1, P_2, \ldots, P_M\} \) được tạo ra bằng cách chọn ngẫu nhiên \( M \) protein, trong đó \( M \) là số lượng protein do người dùng chỉ định để sử dụng cho việc tạo tập huấn luyện. Từ mỗi lớp, \( M/C \) protein được chọn ngẫu nhiên, thuộc về các thể thực khuẩn của lớp đó, với \( C \) là số lượng lớp trong tập huấn luyện. Trong các thí nghiệm của nhóm tác giả, việc chọn \( M = 600 \) cho kết quả tốt nhất được lựa chọn theo kinh nghiệm. Khi giảm giá trị \( M \), độ chính xác giảm xuống; ngược lại, khi tăng giá trị \( M \), thời gian chạy tăng lên mà không mang lại sự cải thiện tương ứng về độ chính xác.
 
@@ -40,7 +40,7 @@ Mỗi cây đưa ra một dự đoán về chu trình (độc lực hay ôn hòa
 
 \textbf{Lọc đặc trưng quan trọng}: Để tăng độ chính xác và hiệu quả tính toán, PHACTS sử dụng phương pháp Gini Importance để đánh giá mức độ quan trọng của từng protein trong việc phân loại. Gini Importance đo lường mức độ đóng góp của một protein vào khả năng phân biệt giữa các lớp (ôn hòa và độc lực). Giá trị Gini Importance cao cho thấy protein đó có vai trò quan trọng trong việc phân loại và giá trị Gini Importance thấp cho thấy protein đó ít đóng góp vào việc phân loại. Chỉ các protein có Gini Importance vượt qua một ngưỡng nhất định (trong nghiên cứu là gấp đôi giá trị trung bình) mới được giữ lại để xây dựng vector tương đồng. Việc loại bỏ các protein ít quan trọng giúp giảm nhiễu, tăng tốc độ xử lý và cải thiện độ chính xác của mô hình.
 
-\subsection{Kết quả và đánh giá}
+\subsection*{Kết quả và đánh giá}
 Kết quả thực nghiệm của PHACTS:
     \begin{itemize}
         \item PHACTS đạt độ chính xác cao trong việc phân loại thực khuẩn.
@@ -60,13 +60,13 @@ PhageAI\cite{tynecki2020phageai} sử dụng phương pháp tiếp cận dựa t
     \label{fig:phageai}
 \end{figure}
 
-\subsection{Dữ liệu huấn luyện}
+\subsection*{Dữ liệu huấn luyện}
 Trong nghiên cứu này, dữ liệu được thu thập từ hai cơ sở dữ liệu chuyên biệt về thực khuẩn thể là ACLAME và PhagesDB. Tổng cộng có hơn 600 bộ gen thực khuẩn. Trong đó mỗi mẫu đều được gán nhãn về chu kỳ sống — bao gồm chu kỳ tan tương ứng với thực khuẩn thể độc lực và chu kỳ tiềm tan tương ứng với thực khuẩn thể ôn hoà.
 
 Tập dữ liệu được phân chia thành hai phần chính:(1) Tập huấn luyện Gồm 278 mẫu thực khuẩn thể độc lực và 174 mẫu thực khuẩn thể ôn hoà. (2) Tập kiểm tra gồm 54 mẫu thực khuẩn thể độc lực và 30 mẫu thực khuẩn thể ôn hoà, được lựa chọn từ các họ và loài thực khuẩn thể khác với các mẫu trong tập huấn luyện, nhằm đảm bảo khả năng tổng quát hóa của mô hình.
 
 
-\subsection{Phương pháp}
+\subsection*{Phương pháp}
 \textbf{Phân chia dữ liệu huấn luyện}: Để kiểm soát và theo dõi quá trình học của mô hình phân loại, PhageAI sử dụng chiến lược phân chia dữ liệu như sau:
 \begin{itemize}
     \item Tập huấn luyện: Dữ liệu được chia ngẫu nhiên thành 10 phần bằng nhau. Trong mỗi vòng lặp, 80\% dữ liệu được sử dụng để huấn luyện, và 20\% còn lại dùng để kiểm tra trong quá trình học. Việc phân tầng được thực hiện dựa trên vòng đời và họ của thực khuẩn, nhằm đảm bảo tính đại diện của các nhóm trong từng phần dữ liệu.
@@ -96,7 +96,7 @@ Trong phạm vi bài báoo này, nhóm tả giả đã thực hiện huấn luy�
 
 Để điều chỉnh siêu tham số của mô hình, thay vì sử dụng các kỹ thuật như Grid Search và Randomized Search - vốn tìm kiếm qua toàn bộ không gian các kết hợp tham số có sẵn theo cách biệt lập mà không cải thiện dựa trên các kết quả trước đó - nhóm nghiên cứu đã áp dụng phương pháp tối ưu hóa Bayesian, giúp giảm thiểu thời gian cần thiết để có được một tập hợp tham số mô hình tối ưu.
 
-\subsection{Kết quả và đánh giá}
+\subsection*{Kết quả và đánh giá}
 \begin{table}[ht]
 \footnotesize
 \centering

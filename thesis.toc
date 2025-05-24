@@ -21,31 +21,24 @@
 \contentsline {section}{\numberline {2.2}Sắp xếp theo thứ tự thời gian công bố}{8}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Phương pháp trình bày trong các phần tiếp theo}{9}{section.2.3}%
 \contentsline {section}{\numberline {2.4}PHACTS}{10}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Dữ liệu huấn luyện}{10}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Phương pháp}{10}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Kết quả và đánh giá}{12}{subsection.2.4.3}%
 \contentsline {section}{\numberline {2.5}PhageAI}{13}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Dữ liệu huấn luyện}{13}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Phương pháp}{14}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Kết quả và đánh giá}{16}{subsection.2.5.3}%
 \contentsline {section}{\numberline {2.6}BACPHLIP}{17}{section.2.6}%
 \contentsline {section}{\numberline {2.7}DeePhage}{19}{section.2.7}%
 \contentsline {section}{\numberline {2.8}PhaTYP}{22}{section.2.8}%
-\contentsline {paragraph}{Giai đoạn học tự giám sát:}{23}{section*.18}%
-\contentsline {paragraph}{Giai đoạn phân loại:}{23}{section*.19}%
+\contentsline {paragraph}{Giai đoạn học tự giám sát:}{23}{section*.24}%
+\contentsline {paragraph}{Giai đoạn phân loại:}{23}{section*.25}%
 \contentsline {section}{\numberline {2.9}DeepPL}{24}{section.2.9}%
 \contentsline {chapter}{\numberline {3}Thực nghiệm}{28}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Xây dựng bộ dữ liệu}{28}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1} Xử lý nhãn }{28}{subsection.3.1.1}%
 \contentsline {section}{\numberline {3.2}Kịch bản thực nghiệm}{29}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Các chỉ số đánh giá}{29}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Kết quả}{29}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Thực nghiệm với mô hình PHACTS}{29}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Kết quả thực nghiệm với PhageAI}{30}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}So sánh hiệu suất phân loại giữa DeePhage và XGBoost trên bộ dữ liệu xây dựng}{31}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.3}So sánh hiệu suất phân loại giữa DeePhage và XGBoost trên bộ dữ liệu xây dựng}{32}{subsection.3.4.3}%
 \contentsline {chapter}{\numberline {4}Kết luận}{33}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Dữ liệu}{33}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Phương pháp}{34}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Kết quả thực nghiệm}{35}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Hướng nghiên cứu tiếp theo}{36}{section.4.4}%
-\contentsline {chapter}{Tài liệu tham khảo}{37}{section*.34}%
+\contentsline {chapter}{Tài liệu tham khảo}{37}{section*.41}%

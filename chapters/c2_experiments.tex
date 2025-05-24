@@ -2,9 +2,9 @@
 Để có cái nhìn tổng quan về các phương pháp đã đề cập đến ở chương trước, nhóm báo cáo đã tiến hành tổng hợp bộ dữ liệu được sử dụng của mỗi phương pháp và tổng hợp kết quả so sánh được đề cập trong mỗi phương pháp. Chương này trình bày bảng tổng hợp bộ dữ liệu, xây dựng bộ dữ liệu chung, sử dụng bộ dữ liệu chung để tiến hành các thực nghiệm trên 3 phương pháp là PHACTS, Phage AI và DeePhage. Cuối cùng, nhóm báo cáo sẽ trình bày kết quả thực nghiệm và phân tích kết quả.
 
 \section{Xây dựng bộ dữ liệu}
-Do các phương pháp sử dụng nhiều bộ dữ liệu khác nhau, việc so sánh trực tiếp hiệu suất phân loại giữa chúng là bất khả thi. Vì vậy, nhóm sinh viên thực hiện xây dựng một bộ dữ liệu chung để sử dụng cho các thực nghiệm của mình.
-\subsection{ Xử lý nhãn }
-Bộ dữ liệu mà nhóm sinh viên xây dựng là sự kết hợp của 2 bộ được sử dụng trong bài báo DeepPL và DeePhage. Nhãn $y$ của bản ghi $X$ được nhóm báo cáo xử lý như sau:
+Do các phương pháp sử dụng nhiều bộ dữ liệu khác nhau, việc so sánh trực tiếp hiệu suất phân loại giữa chúng là bất khả thi. Vì vậy, nhóm báo cáo thực hiện xây dựng một bộ dữ liệu chung để sử dụng cho các thực nghiệm của mình.
+\subsection*{ Xử lý nhãn }
+Bộ dữ liệu mà nhóm báo cáo xây dựng là sự kết hợp của 2 bộ được sử dụng trong bài báo DeepPL và DeePhage. Nhãn $y$ của bản ghi $X$ được nhóm báo cáo xử lý như sau:
 \begin{enumerate}
     \item Nếu $X \in DeePhage \Rightarrow y = y_{DeePhage}$ 
     \item Nếu $X \in DeepPL \Rightarrow y = y_{DeepPL}$
@@ -13,7 +13,7 @@ Bộ dữ liệu mà nhóm sinh viên xây dựng là sự kết hợp của 2 b
 Sau khi kết hợp, bộ dữ liệu thu được bao gồm: 2241 bộ dữ liệu di truyền thực khuẩn, trong đó có 1534 bản ghi được gán nhãn là 1 (thực khuẩn thể độc lực) và 707 bản ghi được gán nhãn 0 (thực khuẩn thể ôn hòa). Sau đó, tập được chia nhỏ thành 2 tập: huấn luyện và kiểm thử. Trong đó, tập huấn luyện gồm 1733 bản ghi với số lượng nhãn 1 và 0 lần lượt là 1184 và 549. Tập kiểm thử có số lượng nhãn 1 và 0 lần lượt là 296 và 138.
 
 \section{Kịch bản thực nghiệm}\label{ kịch bản thực nghiệm}
-Nhóm sinh viên thực hiện mô phỏng lại 3 phương pháp: PHACTS, PhageAI và DeePhage trên bộ dữ liệu chung. Ngoài ra, nhóm có thử nghiệm phân loại bộ dữ liệu với mô hình XGBoost và so sánh mô hình này với phương pháp DeePhage.
+Nhóm báo cáo thực hiện mô phỏng lại 3 phương pháp: PHACTS, PhageAI và DeePhage trên bộ dữ liệu chung. Ngoài ra, nhóm có thử nghiệm phân loại bộ dữ liệu với mô hình XGBoost và so sánh mô hình này với phương pháp DeePhage.
 
 \section{Các chỉ số đánh giá}
 Để đánh giá 1 cách toàn diện hiệu suất phân loại của mô hình chứ không chỉ tập trung vào nhãn 1, nhóm báo cáo sử dụng các chỉ số sau:
@@ -47,7 +47,7 @@ Dựa trên mã nguồn mà nhóm tác giả công bố, nhóm đã thực hiệ
 Nhóm báo cáo nhận thấy rằng, với bộ dữ liệu dùng chung ở trên, mô hình PHACTS cho kết quả Accuracy là 71.24\%, Sensitivity là 82.77\% và Specificity là 46.52\%. Kết quả này thấp hơn nhiều so với kết quả công bố của nhóm tác giả PHACTS (đã đề cập ở phần trước).
 
 \subsection{Kết quả thực nghiệm với PhageAI}
-Trong thí nghiệm này, chúng tôi thực hiện thử nghiệm các thuật toán học máy trong bài báo PhageAI với bộ dữ liệu mới. Các mô hình đều sử dụng BayesianSearch để tối ưu lựa chọn các bộ tham số tốt nhất. Riêng với thuật toán SVM, chúng tôi sử dụng bộ tham số đã được tác giả công bố trong bài báo.
+Nhóm báo cáo thực hiện thử nghiệm các thuật toán học máy trong bài báo PhageAI với bộ dữ liệu mới. Các mô hình đều sử dụng BayesianSearch để tối ưu lựa chọn các bộ tham số tốt nhất. Riêng với thuật toán SVM, nhóm báo cáo sử dụng bộ tham số đã được tác giả công bố trong bài báo.
 \begin{table}[ht]
 \footnotesize
 \centering
@@ -67,13 +67,15 @@ LightGBM & 0.933 & 0.951 & 0.878 \\
 CatBoost & 0.931 & 0.953 & 0.870 \\
 \hline
 \end{tabular}
+
+
 \caption{Kết quả so sánh các thuật toán học máy theo Accuracy, Sensitivity và Specificity trên bộ dữ liệu kết hợp.}
 \label{tab:model_comparison}
 \end{table}
 
 Dựa trên kết quả Bảng \ref{tab:model_comparison}, có thể thấy rằng các mô hình thuộc nhóm ensemble learning, đặc biệt là các thuật toán Boosting như XGBoost, LightGBM, CatBoost và GradientBoostingClassifier, đều cho hiệu suất rất cao trên cả ba chỉ số: Accuracy, Sensitivity và Specificity. Trong đó, XGBoost đạt Accuracy cao nhất (0.936), đồng thời duy trì mức Sensitivity (0.959) và Specificity (0.883) rất cân bằng, cho thấy khả năng phân biệt tốt giữa hai lớp.
 
-RandomForestClassifier cũng thể hiện hiệu quả cao với Accuracy 0.928, tuy nhiên có phần thiên lệch hơn về Sensitivity (0.963) so với Specificity (0.854), nghĩa là mô hình có xu hướng nhạy hơn với lớp dương (Class 1).
+RandomForestClassifier cũng thể hiện hiệu quả cao với Accuracy 0.928, tuy nhiên có phần thiên lệch hơn về Sensitivity (0.963) so với Specificity (0.854), nghĩa là mô hình có xu hướng nhạy hơn với lớp dương (Class 1). Khi so sánh kết quả này với PHACTS cũng sử dụng RandomForestClassifier, có thể thấy rằng PHACTS có độ chính xác thấp hơn nhiều (71.24\%) và độ nhạy cũng thấp hơn (82.77\%) so với các mô hình học máy hiện đại. 
 
 Ở nhóm mô hình cơ bản hơn như GaussianNB và SGDClassifier, kết quả không thực sự khả quan. Đặc biệt, GaussianNB cho Specificity chỉ ở mức 0.365, cho thấy mô hình này khó phân biệt được lớp âm (Class 0), mặc dù có Sensitivity tương đối tốt (0.780). Điều này thường xảy ra khi dữ liệu không phù hợp với giả định phân phối chuẩn của Naive Bayes.
 
